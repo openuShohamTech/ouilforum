@@ -1,0 +1,2663 @@
+.path-mod-ouilforum #searchforums {	
+	background-color: #fff;
+	border: 1px solid #ccc;
+}
+.path-mod-ouilforum a:hover,
+.path-mod-ouilforum a:focus {
+	outline: none;
+}
+.path-mod-ouilforum button:focus {
+	background-color: #e6e6e6;
+    border-color: #8c8c8c;
+}
+.path-mod-ouilforum .activesetting {
+    color: #262626;
+    font-weight: bold;
+}
+.dir-rtl.path-mod-ouilforum #searchforums,
+.dir-rtl.path-mod-ouilforum #trackforum,
+.dir-rtl.path-mod-ouilforum .subscribediscussion {
+	margin-left: 5px;
+}
+.dir-ltr.path-mod-ouilforum #searchforums,
+.dir-ltr.path-mod-ouilforum #trackforum,
+.dir-ltr.path-mod-ouilforum .subscribediscussion {
+	margin-right: 5px;
+}
+.path-mod-ouilforum .subscribediscussion {
+	background-color: #fff;
+}
+.dir-rtl .align_start,
+.dir-ltr .align_end {
+	text-align: right;
+}
+.dir-rtl .align_end,
+.dir-ltr .align_start {
+	text-align: left;
+}
+.dir-rtl .float_start,
+.dir-ltr .float_end {
+	float: right;
+}
+.dir-rtl .float_end,
+.dir-ltr .float_start {
+	float: left;
+}
+.align_center {
+	text-align: center;
+}
+.ouilforumpost {
+	display: block;
+	position: relative;
+	margin: 0 0 .3em 0;
+	padding: 0;
+	max-width: 100%;
+}
+.ouilforumpost .row {
+	width: 100%;
+	position: relative;
+}
+.ouilforumpost .row .left {
+	float: left;
+	width: 43px;
+	overflow: hidden;
+}
+.ouilforumpost .row .left .grouppictures a {
+	text-align: center;
+	display: block;
+	margin: 6px 2px 0 2px;
+}
+.ouilforumpost .row .left .grouppicture {
+	width: 20px;
+	height: 20px;
+}
+.ouilforumpost .row .topic,
+.ouilforumpost .row .content-mask,
+.ouilforumpost .row .options {
+	margin-left: 43px;
+}
+.ouilforumpost .picture img {
+	margin: 4px;
+}
+.ouilforumpost .options .commands,
+.ouilforumpost .content .attachments,
+.ouilforumpost .options .footer,
+.ouilforumpost .options .link {
+	text-align: right;
+}
+.ouilforumpost .options .ouilforum-post-rating {
+	float: left;
+}
+.ouilforumpost .content .posting {
+	overflow: auto;
+	max-width: 100%;
+}
+.ouilforumpost .content .attachedimages img {
+	max-width: 100%;
+}
+.ouilforumpost .post-word-count {
+	font-size: .85em;
+	font-style: italic;
+}
+.ouilforumpost .shortenedpost .post-word-count {
+	display: inline;
+	padding: 0 .3em;
+}
+.dir-rtl .ouilforumpost .row .topic,
+.dir-rtl .ouilforumpost .row .content-mask,
+.dir-rtl .ouilforumpost .row .options {
+	margin-right: 43px;
+	margin-left: 0;
+}
+.dir-rtl .ouilforumpost .row .left {
+	float: right;
+}
+.dir-rtl.path-mod-ouilforum .indent {
+    margin-right: 3%;
+    margin-left: 0;
+}
+.path-mod-ouilforum .ouilforumolddiscuss,
+#page-mod-ouilforum-search .c0 {
+	text-align: right;
+}
+.path-mod-ouilforum .indent {
+    margin-left: 3%;
+}
+
+/** Styles for subscribers.php */
+#page-mod-ouilforum-subscribers .subscriberdiv,
+#page-mod-ouilforum-subscribers .subscribertable {width:100%;vertical-align:top;}
+#page-mod-ouilforum-subscribers .subscribertable tr td {vertical-align:top;}
+#page-mod-ouilforum-subscribers .subscribertable tr td.actions {width:16%;padding-top:3em;}
+#page-mod-ouilforum-subscribers .subscribertable tr td.actions .actionbutton {margin:0.3em 0;padding:0.5em 0;width:100%;}
+#page-mod-ouilforum-subscribers .subscribertable tr td.existing,
+#page-mod-ouilforum-subscribers .subscribertable tr td.potential {width:42%;}
+
+/** Styles for discuss.php **/
+#page-mod-ouilforum-discuss .discussioncontrols {width:100%;margin:5px;}
+#page-mod-ouilforum-discuss .discussioncontrols .discussioncontrol {width:33%;float:left;}
+#page-mod-ouilforum-discuss .discussioncontrol.exporttoportfolio {text-align:left;}
+#page-mod-ouilforum-discuss .discussioncontrol.displaymode {text-align:center;}
+#page-mod-ouilforum-discuss .discussioncontrol.movediscussion {float:right;width:auto;text-align:right;padding-right:10px;}
+#page-mod-ouilforum-discuss .discussioncontrol.movediscussion .movediscussionoption {}
+
+/** Styles for view.php **/
+#page-mod-ouilforum-view .forumaddnew {margin-bottom: 20px;}
+#page-mod-ouilforum-view .groupmenu {float: left;text-align:left;white-space: nowrap;}
+#page-mod-ouilforum-index .subscription,
+#page-mod-ouilforum-view .subscription {float: right;text-align:right;white-space: nowrap;margin: 5px 0;}
+
+/** Styles for search.php */
+#page-mod-ouilforum-search .introcontent {padding: 15px;font-weight:bold;}
+/** Unknown Styles ??? */
+#email .unsubscribelink {margin-top:20px;}
+
+.path-course-view .section .modtype_ouilforum span.unread {
+    background-color: #FFD;
+    unicode-bidi: bidi-override;
+}
+.path-course-view .section .modtype_ouilforum span.unread span.unread_number {
+	direction: ltr;
+	unicode-bidi: bidi-override;
+}
+/* Discussion navigation */
+.path-mod-ouilforum .discussion-nav {
+    margin: .5em 0;
+}
+.path-mod-ouilforum .discussion-nav ul {
+    margin: 0;
+    list-style: none;
+}
+.dir-rtl.path-mod-ouilforum .discussion-nav .next-discussion:after,
+.path-mod-ouilforum .discussion-nav .prev-discussion:before {
+    content: ' ◄ ';
+}
+.dir-rtl.path-mod-ouilforum .discussion-nav .prev-discussion:before,
+.path-mod-ouilforum .discussion-nav .next-discussion:after {
+    content: ' ► ';
+}
+.dir-rtl.path-mod-ouilforum .discussion-nav .prev-discussion,
+.path-mod-ouilforum .discussion-nav .next-discussion {
+    float: right;
+}
+.dir-rtl.path-mod-ouilforum .discussion-nav .next-discussion,
+.path-mod-ouilforum .discussion-nav .prev-discussion {
+    float: left;
+}
+
+.path-mod-ouilforum .preload-subscribe {
+    background: url([[pix:mod_ouilforum|t/subscribed]]) no-repeat -9999px -9999px;
+}
+
+.path-mod-ouilforum .preload-unsubscribe {
+    background: url([[pix:mod_ouilforum|t/unsubscribed]]) no-repeat -9999px -9999px;
+}
+
+.path-mod-ouilforum .discussionsubscription {
+    margin-top: -10px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.path-mod-ouilforum .discussionsubscription > a > img {
+    width: 12px;
+    padding: 0 4px;
+}
+
+.dir-rtl .path-mod-ouilforum .discussionsubscription {
+    text-align: left;
+}
+
+#page-mod-ouilforum-view img.timedpost {
+    margin-right: 5px;
+}
+
+.dir-rtl#page-mod-ouilforum-view img.timedpost {
+    margin: 3px 0 0 5px;
+    float: right;
+}
+.path-mod-ouilforum .postauthor {
+	width: 35px;
+	display: inline-block;
+}
+.path-mod-ouilforum .postauthor img {
+	width: 35px;
+	height: 35px;
+	border-radius: 3px;
+	vertical-align: text-top;
+}
+.path-mod-ouilforum .author .post_author {
+	padding: 0 5px;
+}
+.path-mod-ouilforum .post_footer div.commands {
+	display: inline-block;
+}
+.path-mod-ouilforum .post_content {
+	min-height: 50px;
+}
+.path-mod-ouilforum .post_header.closed_post+.post_main {
+	display: none;
+}
+.path-mod-ouilforum .post_header.closed_post .postauthor > a,
+.path-mod-ouilforum .post_header.closed_post .postauthor > img,
+.path-mod-ouilforum .post_header.closed_post .grouppictures {
+	display: none;
+}
+.path-mod-ouilforum .post_header {
+	background-color: #ebebeb;
+	border-bottom: 1px solid #ccc;
+	padding: 3px 4px 2px;
+}
+.path-mod-ouilforum .post_title .numbers {
+	padding: 0 4px;
+}
+.dir-rtl.path-mod-ouilforum .post_body {
+	padding: 0 35px 0 4px;
+}
+.dir-ltr.path-mod-ouilforum .post_body {
+	padding: 0 4px 0 35px;
+}
+.path-mod-ouilforum .post_main {
+	background-color: #f5f5f5;
+}
+.path-mod-ouilforum .post_content {
+	background-color: #fff;
+}
+.dir-rtl.path-mod-ouilforum .post_footer {
+	padding: 4px 35px 4px 4px;
+}
+.dir-ltr.path-mod-ouilforum .post_footer {
+	padding: 4px 4px 4px 35px;
+}
+.path-mod-ouilforum .post_header .grouppictures a {
+	display: inline-block;
+	padding: 5px 6px;
+	background-color: #fff;
+	border-radius: 50px;
+	margin: 0 2px 5px;
+}
+.path-mod-ouilforum .post_header .grouppictures img {
+	width: 20px;
+	height: 20px;
+}
+.path-mod-ouilforum .post_dynicons .post_icon {
+	margin: 0 3px;
+	display: none;
+}
+.path-mod-ouilforum .post_dynicons .post_icon.active {
+	display: inline;
+}
+.ouilforum_paging {
+	text-align: center;
+	clear: both;
+}
+.path-mod-ouilforum .for-sr {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: polygon(0px 0px, 0px 0px,0px 0px, 0px 0px);
+	border: 0;
+}
+.ouilforum_paging ul {
+	margin: 0 0 10px;
+	font-size: 13px;
+}
+.ouilforum_paging li {
+	list-style: none;
+	display: inline-block;
+	padding: 2px 3px;
+}
+.path-mod-ouilforum .singlebutton div {
+	margin: 0 0 5px;
+}
+.path-mod-ouilforum .singlebutton input[type="submit"] {
+	margin: 0;
+}
+.path-mod-ouilforum .post_nolink {
+	font-weight: bold;
+}
+.path-mod-ouilforum .post_header.closed_post ~ .indent {
+	display: none;
+}
+.path-mod-ouilforum .post_header.closed_post ~ div.discussionslist {
+	display: none;
+}
+.path-mod-ouilforum .ouilforum_message {
+	text-align: center;
+	background-color: #ebebeb;
+}
+.dir-rtl.path-mod-ouilforum .role_icon {
+	margin: 0 3px 0 0;
+}
+.dir-ltr.path-mod-ouilforum .role_icon {
+	margin: 0 0 0 3px;
+}
+#page-mod-ouilforum-move #discussionslist, 
+#page-mod-ouilforum-move #forumslist, 
+#page-mod-ouilforum-move #newtitle {
+	display: none;
+}
+.path-mod-ouilforum ul.discussionslist {
+	padding: 0;
+	margin: 0;
+}
+.path-mod-ouilforum li.discussionslist {
+	list-style-type: none;
+	margin-bottom: 10px;
+}
+#page-mod-ouilforum-move #discussionslist input[type="radio"] {
+	vertical-align: top;
+}
+.path-mod-ouilforum .post_body.post_preview {
+	border-bottom: 3px solid #ebebeb;
+	cursor: auto;
+}
+.path-mod-ouilforum .post_body.post_preview.closed_post {
+	display: none;
+}
+.path-mod-ouilforum .flexiblegeneraltable .c0 {
+	width: 20%;
+	word-break: break-word;
+}
+.path-mod-ouilforum .flexiblegeneraltable .ouilforum_index_description {
+	border-bottom: 1px solid #dcdcdc;
+	margin-bottom: 3px;
+}
+.path-mod-ouilforum .flexiblegeneraltable .ouilforum_index_row_small, 
+.path-mod-ouilforum .flexiblegeneraltable .ouilforum_index_row_med {
+	display: inline-block;
+}
+.path-mod-ouilforum .flexiblegeneraltable .ouilforum_index_row_med {
+	width: 36%;
+}
+.path-mod-ouilforum .flexiblegeneraltable .inner_row {
+	min-height: 32px;
+}
+.path-mod-ouilforum .ouilforum-post-actions.show {
+	display: inline-block !important;
+}
+
+/*****************/
+
+.dir-ltr #newsareadiscussions ul {
+	margin: 0 20px 10px 0;
+}
+.dir-rtl #newsareadiscussions ul {
+	margin: 0 0 0 20px;
+}
+#newsareadiscussions ul > span {
+	font-size: 14px;
+	font-weight: bold;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	color: [[setting:themecolor]];
+	margin: 0;
+}
+.dir-ltr #newsareadiscussions ul > span.bulletin,
+.dir-ltr #newsareadiscussions ul > span.new {
+	padding-left: 30px;
+	background-position: left center;	
+}
+.dir-rtl #newsareadiscussions ul > span.bulletin,
+.dir-rtl #newsareadiscussions ul > span.new {
+	padding-right: 30px;
+	background-position: right center;	
+}
+#newsareadiscussions ul > span.bulletin {
+	background: url([[pix:i/navigationitem]]) no-repeat;
+}
+#newsareadiscussions ul > span.new {
+	background: url([[pix:ouilforum|i/new]]) no-repeat;
+}
+#newsareadiscussions ul > img {
+	width: 16px;
+}
+#newsareadiscussions li {
+	list-style: none;
+	word-wrap: break-word;
+	padding-bottom: 10px;
+}
+#newsareadiscussions li p {
+	margin-bottom: 5px;
+}
+.dir-ltr #newsareadiscussions li {
+	margin: 0 10px 0 4px;
+	padding: 0 0 0 26px;
+}
+.dir-rtl #newsareadiscussions li {
+	margin: 0 4px 0 10px;
+	padding: 0;
+}
+.dir-ltr #newsareadiscussions li .newscontrols.editpost a {
+	padding-left: 16px;
+	background: url([[pix:t/editstring]]) left center no-repeat;
+}
+.dir-rtl #newsareadiscussions li .newscontrols.editpost a {
+	padding-right: 16px;
+	background: url([[pix:t/editstring]]) right center no-repeat;
+}
+.dir-ltr #newsareadiscussions li .newscontrols.deletepost a {
+	padding-left: 16px;
+	background: url([[pix:t/delete]]) left center no-repeat;
+}
+.dir-rtl #newsareadiscussions li .newscontrols.deletepost a {
+	padding-right: 16px;
+	background: url([[pix:t/delete]]) right center no-repeat;
+}
+#newsareadiscussions li .newscontrols {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.dir-ltr #newsareadiscussions li .newscontrols {
+	margin: 0 10px 0 0;
+}
+.dir-rtl #newsareadiscussions li .newscontrols {
+	margin: 0.5em 0 0.5em 10px;
+}
+.path-mod-ouilforum .highlight {
+	background-color: #FF0;
+}
+.path-mod-ouilforum .commands a, .path-mod-ouilforum .iconslegend span {
+	background-repeat: no-repeat;
+	white-space: nowrap;
+	display: inline-block;
+	font-size: 13px
+}
+.simpleactionmenu {
+	position: relative;
+	display: inline-block;
+}
+.simpleactionmenu ul {
+    margin-top: 4px;
+	position: absolute;
+    top: 100%;
+    z-index: 1000;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 14px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box;
+	line-height: 30px;
+    display: none;
+}
+.simpleactionmenu.grid ul {
+    margin: 0;
+    padding: 0;
+}
+
+.dir-rtl .simpleactionmenu ul, .dir-ltr .simpleactionmenu.flip_side ul {
+    right: 0;
+    left: inherit;
+}
+.dir-ltr .simpleactionmenu ul, .dir-rtl .simpleactionmenu.flip_side ul {
+    left: 0;
+    right: inherit;
+}
+.simpleactionmenu ul.show-menu {
+	display: block;
+}
+.simpleactionmenu li {	
+	display: block;
+}	
+.simpleactionmenu li a[role="menuitem"] {
+	display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.4em;
+    color: #333333;
+}
+.simpleactionmenu ul li a:hover,
+.simpleactionmenu ul li a:focus {
+	background-color: #018388;
+    color: #ffffff !important;
+	text-decoration: none;
+	outline: none !important;
+}
+.simpleactionmenu span.corner_caret {
+    bottom: 8px;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-style: solid;
+    border-color: transparent transparent #9db0c0 transparent;
+}
+.simpleactionmenu > a:hover span.corner_caret {
+	border-color: transparent transparent #93c6b6 transparent;
+}
+.simpleactionmenu span.corner_caret.rl {
+    right: 0;
+    border-width: 0 0 8px 8px;
+}
+.simpleactionmenu span.corner_caret.lr {
+    left: 0;
+    border-style: solid;
+    border-width: 0 8px 8px 0;
+}
+.simpleactionmenu.grid ul {
+	min-width: 0;
+	white-space: nowrap;
+	line-height: 0;
+}
+.simpleactionmenu.grid li {
+	display: inline-block;
+}
+.simpleactionmenu.grid li a[role="menuitem"] {
+	padding: 0 6px;
+}
+.path-mod-ouilforum #region-main {
+	background-color: #fff;
+	padding: 15px 30px;
+}
+.path-mod-ouilforum .ouilforumsearch {
+	display: inline-block;
+	font-size: 14px;
+}
+.path-mod-ouilforum .ouilforumsearch input[name="search"] {
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	box-shadow: none;
+	margin: 0 10px;
+	font-size: 13px;
+}
+.path-mod-ouilforum .ouilforumsearch input[name="search"]::-ms-input-placeholder {
+	color: #5a5a5a;
+}
+.path-mod-ouilforum .ouilforumsearch input[name="search"]:-ms-input-placeholder {
+	color: #5a5a5a;
+}
+.path-mod-ouilforum .ouilforumsearch input[name="search"]::-webkit-input-placeholder {
+	color: #5a5a5a;
+}
+.path-mod-ouilforum .ouilforumsearch input[name="search"]::placeholder {
+	color: #5a5a5a;
+	opacity: 1;
+}
+
+.path-mod-ouilforum .ouilforumsearch input[type="submit"] {
+	border-radius: 13px;
+	font-size: 13px;
+	padding: 3px 10px;
+	color: #018388;
+}
+.path-mod-ouilforum .ouilforumsearch input[type="submit"]:hover {
+	color: #016a6e;
+}
+.path-mod-ouilforum .link_button {
+	border: 1px solid #ccc;
+	border-radius: 13px;
+	padding: 3px 6px;
+	cursor: pointer;
+	-webkit-ser-select: none;
+	user-select: none;
+    -webkit-transition: background-color .4s ease;
+	transition: background-color .4s ease;
+}
+.path-mod-ouilforum .link_button:hover,
+.path-mod-ouilforum .link_button:focus {
+	background-color: #e6e6e6;
+	border-color: #adadad;
+	outline: none !important;
+	color: #016a6e;
+}
+.path-mod-ouilforum .clean_button {
+	border-radius: 30px;
+	padding: 3px 10px;
+    -webkit-transition: background-color .4s ease;
+	transition: background-color .4s ease;
+	font-size: 13px;
+	color: #018388;
+}
+.path-mod-ouilforum .clean_button:focus,
+.path-mod-ouilforum .clean_button:active {
+	outline: none;
+}
+.path-mod-ouilforum .clean_button.enhanced {
+	padding: 3px 7px 0;
+}
+.path-mod-ouilforum .clean_button.enhanced[data-buttonstate="on"] {
+	border: 1px solid #016a6e;
+	color: #016a6e;
+}
+.path-mod-ouilforum .clean_button.enhanced[data-buttonstate="on"]:hover,
+.path-mod-ouilforum .clean_button.enhanced[data-buttonstate="on"]:focus {
+	border: 1px solid #025454;
+	color: #025454;
+	background-color: #fff;
+}
+.path-mod-ouilforum .clean_button.enhanced[data-buttonstate="off"] {
+	border: 1px solid #9db0bf;
+	color: #6a777f;
+}
+.path-mod-ouilforum .clean_button.enhanced[data-buttonstate="off"]:hover,
+.path-mod-ouilforum .clean_button.enhanced[data-buttonstate="off"]:focus {
+	border: 1px solid #8898a3;
+	color: #535e63;
+	background-color: #fff;
+}
+.path-mod-ouilforum .clean_button.enhanced span.icon {
+	width: 25px;
+	height: 25px;
+	border-radius: 25px;
+	background: no-repeat 0 50%;
+}
+.path-mod-ouilforum.dir-rtl .clean_button.enhanced span.icon {
+	margin: -3px 0 0 5px;
+}
+.path-mod-ouilforum.dir-ltr .clean_button.enhanced span.icon {
+	margin: -3px 5px 0 0;
+}
+.path-mod-ouilforum.dir-rtl .clean_button.enhanced.compact_button span.icon,
+.path-mod-ouilforum.dir-ltr .clean_button.enhanced.compact_button span.icon {
+	margin: -3px 0 0;
+}
+.path-mod-ouilforum #ouilforum_top_panel {
+	padding: 0 0 5px 0;
+	border-bottom: 2px solid #eee;
+}
+.path-mod-ouilforum #ouilforum_top_buttons {
+	padding: 13px 0 2px 0;
+}
+.path-mod-ouilforum #ouilforum_top_buttons .stage_button_container > button {
+	background-color: #fff;
+}
+.path-mod-ouilforum select.forummode {
+	border-radius: 20px;
+}
+.path-mod-ouilforum .discussion_button {
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    color: #018388;
+	font-size: 1.3em;
+	-webkit-transition: transform .3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+	transition: transform .3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+.path-mod-ouilforum .discussion_button:hover, 
+.path-mod-ouilforum .discussion_button:active, 
+.path-mod-ouilforum .discussion_button:focus {
+    outline: none;
+    color: #018388;
+    background-color: #f5f7f8;
+}
+.path-mod-ouilforum.dir-rtl .discussion_button {
+	background: url([[pix:mod_ouilforum|i/togglearrowrtl]]) no-repeat 0 0;	
+}
+.path-mod-ouilforum.dir-ltr .discussion_button {
+	background: url([[pix:mod_ouilforum|i/togglearrowltr]]) no-repeat 0 0;	
+}
+.path-mod-ouilforum.dir-rtl .discussion_button.d_opened {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+.path-mod-ouilforum.dir-ltr .discussion_button.d_opened {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.path-mod-ouilforum .ouilforum_post {
+	margin: 0 0 6px 0;
+	position: relative;
+	border: 1px solid #dbdfe4;
+	border-radius: 2px;
+}
+.dir-rtl.path-mod-ouilforum .ouilforum_post {
+	-webkit-box-shadow: 2px 2px 3px 0 #dbdfe4;
+	box-shadow: 2px 2px 3px 0 #dbdfe4;
+}
+.dir-ltr.path-mod-ouilforum .ouilforum_post {
+	-webkit-box-shadow: -2px 2px 3px 0 #dbdfe4;
+	box-shadow: -2px 2px 3px 0 #dbdfe4;
+}
+.ouilforum_post .of_post_header {
+	background-color: #fff;
+}
+.dir-rtl .ouilforum_post .of_post_header {
+	padding: 10px 7px 3px 19px;
+}
+.dir-ltr .ouilforum_post .of_post_header {
+	padding: 10px 19px 3px 7px;
+}
+.ouilforum_post.firstpost .of_post_header {
+	padding-top: 7px;
+	background-color: #f2f3f3;
+}
+.path-mod-ouilforum #region-main .ouilforum_post.firstpost .of_post_header a {
+	color: #016a6e;
+}
+.ouilforum_post.firstpost .of_post_title {
+	position: relative;
+	z-index: 1;
+	background-color: inherit;
+}
+.ouilforum_post.firstpost .of_post_title:before {
+    border-top: 1px dashed #a8b7c1;
+    content: "";
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    width: 95%;
+    z-index: -1;
+}
+.dir-rtl .ouilforum_post.firstpost .of_post_title:before {
+	left: 0;
+	margin: 0 0 0 6px;
+}
+.dir-ltr .ouilforum_post.firstpost .of_post_title:before {
+	right: 0;
+	margin: 0 6px 0 0;
+}
+.ouilforum_post.firstpost .of_discussion_header {
+	margin: 0;
+	display: inline;
+	background-color: inherit;
+	color: #016a6e;
+}
+.dir-rtl .ouilforum_post.firstpost .of_discussion_header {
+	padding: 0 0 0 13px;
+}
+.dir-ltr .ouilforum_post.firstpost .of_discussion_header {
+	padding: 0 13px 0 0;
+}
+.discussion_button_container {
+	position: absolute;
+	top: 0;
+}
+.of_new_post {
+	position: absolute;
+}
+.dir-rtl .ouilforum_post .of_new_post {
+	margin: 0 -25px 0 0;
+}
+.dir-ltr .ouilforum_post .of_new_post {
+	margin: 0 0 0 -25px;
+}
+.dir-rtl .ouilforum_post.firstpost .of_new_post {
+	margin: 0 22px 0 0;
+}
+.dir-ltr .ouilforum_post.firstpost .of_new_post {
+	margin: 0 0 0 22px;
+}
+.discussion_subject {
+	display: inline-block;
+	font-weight: bold;
+	background-color: inherit;
+}
+.path-mod-ouilforum .firstpost .post_subject,
+.path-mod-ouilforum .firstpost .numbers {
+	font-size: 16px;
+}
+.dir-rtl .discussion_subject, 
+.dir-rtl .firstpost .of_post_subtitle {
+	padding-right: 50px;
+}
+.dir-ltr .discussion_subject, 
+.dir-ltr .firstpost .of_post_subtitle {
+	padding-left: 50px;
+}
+.of_postdate {
+    direction: ltr;
+    unicode-bidi: bidi-override;
+    color: #016a6e;
+}
+.path-mod-ouilforum.dir-rtl .of_postdate {
+	margin: 0 0 0 17px;
+}
+.path-mod-ouilforum.dir-ltr .of_postdate {
+	margin: 0 17px 0 0;
+}
+
+.of_post_subtitle .author {
+	display: inline-block;
+	padding: 9px 0 0 0;
+}
+.firstpost .of_post_subtitle .author {
+	padding: 4px 0 0 0;
+}
+.of_post_main {
+	background-color: #fff;
+	border-top: 1px solid #e3e6ea;
+}
+.dir-rtl .of_post_main {
+	padding: 14px 15px 12px 17px;
+}
+.dir-ltr .of_post_main {
+	padding: 14px 17px 12px 15px;
+}
+.ouilforum_post.closed_post .of_post_main {
+	display: none;
+}
+.of_post_body_side {
+	width: 65px;
+}
+.of_post_body {
+	position: relative;
+}
+.dir-rtl .of_post_body {
+	margin: 0 90px 15px 0;
+}
+.dir-rtl .of_post_footer {
+	margin: 0 90px 0 0;
+}
+.dir-ltr .of_post_body {
+	margin: 0 0 15px 90px;
+}
+.dir-ltr .of_post_footer {
+	margin: 0 0 0 90px;
+}
+.path-mod-ouilforum .of_reply {
+	margin: -11px 0 0;
+	border: none;
+	padding: 0;
+}
+.path-mod-ouilforum button.of_reply {
+	background-color: #fff;
+}
+.path-mod-ouilforum button.of_reply:hover,
+.path-mod-ouilforum button.of_reply:focus {
+	background-color: #e6e6e6;
+	border-color: #adadad;
+}
+.path-mod-ouilforum .of_reply.wait_for_dialog {
+	background-color: #e6e6e6;
+}
+.path-mod-ouilforum .of_reply .of_reply_icon {
+	background: url([[pix:mod_ouilforum|i/plusgreen]]) no-repeat;
+	width: 24px;
+	height: 24px;
+	transition: transform .1s linear;
+}
+.path-mod-ouilforum .of_reply.wait_for_dialog .of_reply_icon {
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.path-mod-ouilforum .of_reply .of_reply_text {
+	display: inline-block;
+}
+.path-mod-ouilforum .of_reply:hover {
+	color: #016a6e;
+	padding: 0;
+}
+.path-mod-ouilforum .of_reply:active {
+	outline: none;
+}
+.path-mod-ouilforum.dir-rtl .of_reply .of_reply_text {
+	padding: 3px 8px 3px 10px;
+}
+.path-mod-ouilforum.dir-ltr .of_reply .of_reply_text {
+	padding: 3px 10px 3px 8px;
+}
+.path-mod-ouilforum .post_content, 
+.path-mod-ouilforum .of_post_title .subject {
+	word-break: break-word;
+	unicode-bidi: plaintext;
+}
+#page-mod-ouilforum-user .of_post_title .subject {
+	unicode-bidi: normal;
+}
+.path-mod-ouilforum .postauthor {
+	width: auto;
+}
+.path-mod-ouilforum .postauthor img {
+	width: 45px;
+	height: 45px;
+	border-radius: 25px;
+	vertical-align: text-top;
+	border: 2px solid #e3e6ea;
+}
+.path-mod-ouilforum .quicknewdialog {
+    background-color: #f2f3f3;
+	-webkit-transition: box-shadow .4s ease, margin-bottom .4s ease;
+	transition: box-shadow .4s ease, margin-bottom .4s ease;
+	max-height: 350px;
+	position: relative;
+}
+.dir-rtl.path-mod-ouilforum .quicknewdialog {
+	-webkit-box-shadow: 3px 4px 6px 2px rgba(207,207,207,1);
+	box-shadow: 3px 4px 6px 2px rgba(207,207,207,1);
+}
+.dir-ltr.path-mod-ouilforum .quicknewdialog {
+	-webkit-box-shadow: -3px 4px 6px 2px rgba(207,207,207,1);
+	box-shadow: -3px 4px 6px 2px rgba(207,207,207,1);
+}
+.path-mod-ouilforum #quickdiscussioncontainer.closed_dialog, 
+.path-mod-ouilforum #quickreplycontainer.closed_dialog {
+	max-height: 0;
+	padding-bottom: 0;
+}
+.path-mod-ouilforum .dialogcontainer.closed_dialog .quicknewdialog {
+	box-shadow: none;
+}
+.path-mod-ouilforum .quickdialogtop {
+	padding: 4px 40px;
+	color: #016a6e;
+	font-weight: bold;
+	border-bottom: 1px solid #dcdfe6;
+	font-size: 16px;
+}
+.path-mod-ouilforum .quickdialogbody {
+	padding: 13px 23px 15px;
+}
+.path-mod-ouilforum .quickdialogbody input {
+	margin: 0 0 8px 0;
+}
+.path-mod-ouilforum .quickdialogbody input, 
+.path-mod-ouilforum .quickdialogbody textarea {
+	padding: 5px 15px;
+	width: 100%;
+	max-width: 100%;
+	border: 1px solid #dbdfe5;
+}
+.path-mod-ouilforum .quickdialog ::-ms-input-placeholder {
+	color: #5a5a5a;
+}
+.path-mod-ouilforum .quickdialog :-ms-input-placeholder {
+	color: #5a5a5a;
+}
+.path-mod-ouilforum .quickdialog :-webkit-input-placeholder {
+	color: #5a5a5a;
+}
+.path-mod-ouilforum .quickdialog ::placeholder {
+	color: #5a5a5a;
+	opacity: 1;
+}
+.path-mod-ouilforum .quickdialogbody input {
+	display: block;
+}
+.path-mod-ouilforum .quickdialogbody input[type="checkbox"] {
+	display: inline;
+	width: auto;
+}
+.path-mod-ouilforum .quickdialogbody textarea {
+    padding: 10px 15px;
+	width: 100%;
+    min-height: 55px;
+    max-height: 100px;
+    height: 100px;
+    resize: none;
+}
+.path-mod-ouilforum .quickdialogbody label {
+	display: inline;
+}
+.path-mod-ouilforum .quickdialogfooter {
+	padding: 0 20px 13px;
+	text-align: center;
+}
+.path-mod-ouilforum .quickdialogfooter button {
+	margin: 0;
+	background-color: #fff;
+	border: 1px solid #ccc;
+}
+.path-mod-ouilforum .quickdialogfooter button:focus,
+.path-mod-ouilforum .quickdialogfooter button:hover {
+	background-color: #e6e6e6;
+	border-color: #adadad;
+}
+.path-mod-ouilforum #sendquickdiscussion {
+	font-weight: bold;
+}
+.path-mod-ouilforum #quicknewpost #quickreplysubject {
+    color: #5a5a5a;
+    top: 2px;
+    padding: 1px 8px;
+    margin: 0;
+    font-size: 16px;
+    max-width: 80%;
+    min-width: 50%;
+    font-weight: normal;
+    border: 1px solid #cccccc;
+	color: #5a5a5a;
+}
+.path-mod-ouilforum .quickdialog .quickdialogbutton {
+	color: #333;
+	text-align: center;
+	width: 20px;
+	height: 20px;
+	padding: 0;
+	margin: 0 5px;
+	border: none;
+	background: none;
+	line-height: 0;
+	font-size: 16px;
+}
+.path-mod-ouilforum #quicknewpost #quickreplytitleedit {
+	display: none;
+}
+.dir-rtl.path-mod-ouilforum #quicknewpost #quicksubject {
+}
+.dir-ltr.path-mod-ouilforum #quicknewpost #quicksubject {
+}
+.path-mod-ouilforum #quicknewpost .editing #quickreplytitleedit {
+	display: block;
+}
+.path-mod-ouilforum #quicknewpost #quickreplytitle {
+	padding-bottom: 4px;
+}
+.path-mod-ouilforum #quicknewpost .editing #quickreplytitle {
+	display: none;
+}
+.path-mod-ouilforum .hidden_element {
+	display: none;
+}
+.path-mod-ouilforum .waitmask {
+	position: absolute;
+	background-color: none;
+	width: 100%;
+	height: 100%;
+    -webkit-transition: background-color .5s ease;
+	transition: background-color .5s ease;
+	top: 0;
+}
+.path-mod-ouilforum .waitmask.active {
+	background-color: rgba(200,200,200,.5);
+}
+.path-mod-ouilforum .empty_field_alert {
+	background-color: #ffeded !important;
+}
+.path-mod-ouilforum .empty_field_alert:-webkit-autofill {
+	webkit-box-shadow: inset 0px 0px 15px 2px rgba(255,181,181,1);
+	box-shadow: inset 0px 0px 15px 2px rgba(255,181,181,1);
+}
+.dir-rtl.path-mod-ouilforum .new_quick_discussion .ouilforum_post, 
+.dir-rtl.path-mod-ouilforum .new_quick_discussion.ouilforum_post {
+	-webkit-animation: fadeNewPostRtl 4s ease-in;
+	-moz-animation: fadeNewPostRtl 4s ease-in;
+	-o-animation: fadeNewPostRtl 4s ease-in;
+	animation: fadeNewPostRtl 4s ease-in;
+}
+.dir-ltr.path-mod-ouilforum .new_quick_discussion .ouilforum_post, 
+.dir-ltr.path-mod-ouilforum .new_quick_discussion.ouilforum_post {
+	-webkit-animation: fadeNewPostLtr 4s ease-in;
+	-moz-animation: fadeNewPostLtr 4s ease-in;
+	-o-animation: fadeNewPostLtr 4s ease-in;
+	animation: fadeNewPostLtr 4s ease-in;
+}
+@-webkit-keyframes fadeNewPostRtl {
+	0%   { box-shadow: 2px 2px 3px 1px #6a777f; }
+	100% { box-shadow: 2px 2px 3px 0 #dbdfe4; }
+}
+@-moz-keyframes fadeNewPostRtl {
+	0%   { box-shadow: 2px 2px 3px 1px #6a777f; }
+	100% { box-shadow: 2px 2px 3px 0 #dbdfe4; }
+}
+@-o-keyframes fadeNewPostRtl {
+	0%   { box-shadow: 2px 2px 3px 1px #6a777f; }
+	100% { box-shadow: 2px 2px 3px 0 #dbdfe4; }
+}
+@keyframes fadeNewPostRtl {
+	0%   { box-shadow: 2px 2px 3px 1px #6a777f; }
+	100% { box-shadow: 2px 2px 3px 0 #dbdfe4; }
+}
+@-webkit-keyframes fadeNewPostLtr {
+	0%   { box-shadow: -2px 2px 3px 1px #6a777f; }
+	100% { box-shadow: -2px 2px 3px 0 #dbdfe4; }
+}
+@-moz-keyframes fadeNewPostLtr {
+	0%   { box-shadow: -2px 2px 3px 1px #6a777f; }
+	100% { box-shadow: -2px 2px 3px 0 #dbdfe4; }
+}
+@-o-keyframes fadeNewPostLtr {
+	0%   { box-shadow: -2px 2px 3px 1px #6a777f; }
+	100% { box-shadow: -2px 2px 3px 0 #dbdfe4; }
+}
+@keyframes fadeNewPostLtr {
+	0%   { box-shadow: -2px 2px 3px 1px #6a777f; }
+	100% { box-shadow: -2px 2px 3px 0 #dbdfe4; }
+}
+.path-mod-ouilforum.path-mod-ouilforum .indent {
+    -webkit-transition: margin-left .4s ease, margin-right .4s ease;
+	transition: margin-left .4s ease, margin-right .4s ease;
+}
+.path-mod-ouilforum.path-mod-ouilforum .indent.flatindent {
+    margin: 0;
+}
+.path-mod-ouilforum .postlevel1 .of_post_header_container {
+	background-color: #f2f3f3;
+}
+.dir-rtl.path-mod-ouilforum .postlevel1 .of_post_header_container .of_post_header,
+.dir-rtl.path-mod-ouilforum .postlevel2 .of_post_header_container .of_post_header {
+	margin-right: 26px;
+}
+.dir-ltr.path-mod-ouilforum .postlevel1 .of_post_header_container .of_post_header,
+.dir-ltr.path-mod-ouilforum .postlevel1 .of_post_header_container .of_post_header {
+	margin-left: 26px;
+}
+.dir-rtl.path-mod-ouilforum .ouilforum_post.postlevel1 .of_post_main {
+	padding-right: 70px;
+}
+.dir-ltr.path-mod-ouilforum .ouilforum_post.postlevel1 .of_post_main {
+	padding-left: 70px;
+}
+.dir-rtl.path-mod-ouilforum .ouilforum_post.postlevel1 .of_post_header {
+	padding-right: 78px;
+}
+.dir-ltr.path-mod-ouilforum .ouilforum_post.postlevel1 .of_post_header {
+	padding-left: 78px;
+}
+.dir-rtl.path-mod-ouilforum .ouilforum_post.postlevel2 .of_post_header {
+	padding-right: 127px;
+}
+.dir-ltr.path-mod-ouilforum .ouilforum_post.postlevel2 .of_post_header {
+	padding-left: 127px;
+}
+.dir-rtl.path-mod-ouilforum .ouilforum_post.postlevel2 .of_post_main {
+	padding-right: 115px;
+}
+.dir-ltr.path-mod-ouilforum .ouilforum_post.postlevel2 .of_post_main {
+	padding-left: 115px;
+}
+.path-mod-ouilforum .ouilforum_post.closed_post + .discussionslist.collapsiblediscussion {
+	display: none;
+}
+.path-mod-ouilforum div#intro {
+	margin: 0;
+	padding: 5px 0 10px;
+	font-size: 16px;
+	word-break: break-word;
+}
+.path-mod-ouilforum form.postratingform select {
+	border-radius: 13px;
+	height: 26px;
+	padding: 2px 3px;
+}
+.path-mod-ouilforum .delete_state .of_discussion_header, 
+.path-mod-ouilforum .delete_state .of_post_header {
+	background-color: #ffbfbf;
+}
+.path-mod-ouilforum .delete_state {
+	overflow-y: hidden;
+}
+.path-mod-ouilforum .nowrap {
+	white-space: nowrap;
+}
+.path-mod-ouilforum .ui-widget-content {
+    border: 1px solid #aaaaaa;
+    background: #ffffff;
+    color: #222222;
+}
+.path-mod-ouilforum .ui-widget {
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 1.1em;
+}
+.path-mod-ouilforum .ui-dialog {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: .2em;
+    outline: 0;
+    z-index: 101;
+}
+.path-mod-ouilforum .ui-dialog .ui-dialog-titlebar {
+    padding: .4em 1em;
+    position: relative;
+}
+.path-mod-ouilforum .ui-widget-header {
+    border: 1px solid #aaaaaa;
+    background: #cccccc;
+    color: #222222;
+    font-weight: bold;
+}
+.path-mod-ouilforum .ui-dialog .ui-dialog-content {
+    position: relative;
+    border: 0;
+    padding: .5em 1em;
+    background: none;
+    overflow: auto;
+}
+.path-mod-ouilforum .ui-dialog .ui-dialog-title {
+    margin: .1em 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.path-mod-ouilforum .ui-dialog .ui-dialog-content {
+    position: relative;
+    border: 0;
+    padding: .5em 1em;
+    background: none;
+    overflow: auto;
+}
+.path-mod-ouilforum .ui-dialog .ui-dialog-buttonpane {
+    text-align: center;
+    border-width: 1px 0 0 0;
+    background-image: none;
+    margin-top: .5em;
+    padding: .3em 1em .5em .4em;
+}
+.path-mod-ouilforum .no-close .ui-dialog-titlebar-close {
+	display: none;
+}
+.path-mod-ouilforum .ui-helper-clearfix::before, .path-mod-ouilforum .ui-helper-clearfix::after {
+	content: "";
+	display: table;
+	border-collapse: collapse;
+}
+.path-mod-ouilforum .ui-helper-clearfix:after {
+	clear: both;
+}
+.path-mod-ouilforum .ui-widget-overlay {
+	background: rgba(170, 170, 170, .3);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+}
+.path-mod-ouilforum #post_link_path {
+	direction: ltr;
+	width: 100%;
+}
+.path-mod-ouilforum #link_copy_result {
+	text-align: center;
+	padding: 6px 6px 0;
+}
+.path-mod-ouilforum #ui_link_dialog .ui-dialog-buttonpane button,
+.path-mod-ouilforum #ui_del_dialog .ui-dialog-buttonpane button,
+.path-mod-ouilforum #ui_close_dialog .ui-dialog-buttonpane button {
+	width: 48%;
+	vertical-align: middle;
+	background-color: #fff;
+}
+.path-mod-ouilforum .of_clean_dialog button.ui-dialog-titlebar-close {
+	vertical-align: middle;
+	background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 2px 6px;
+}
+.dir-rtl.path-mod-ouilforum .of_clean_dialog button.ui-dialog-titlebar-close {
+	margin: 0 0 0 3px;
+}
+.dir-ltr.path-mod-ouilforum .of_clean_dialog button.ui-dialog-titlebar-close {
+	margin: 0 3px 0 0;
+}
+.path-mod-ouilforum .of_clean_dialog button.ui-dialog-titlebar-close:hover,
+.path-mod-ouilforum #ui_link_dialog .ui-dialog-buttonpane button:hover,
+.path-mod-ouilforum #ui_del_dialog .ui-dialog-buttonpane button:hover,
+.path-mod-ouilforum #ui_close_dialog .ui-dialog-buttonpane button:hover {
+	background-color: #e6e6e6;
+}
+.path-mod-ouilforum a[id^="p"]:empty {
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: -60px;
+}
+.path-mod-ouilforum .of_post_icons {
+	position: relative;
+	z-index: 2;
+	line-height: 0;
+	margin-top: -1px;
+}
+.path-mod-ouilforum .firstpost .of_post_icons {
+	margin-top: -6px;
+}
+.path-mod-ouilforum .of_post_icons button[data-actiontype="lock"], 
+.path-mod-ouilforum .of_post_icons button[data-actiontype="recommend"], 
+.path-mod-ouilforum .of_post_icons button.pin_discussion,
+.path-mod-ouilforum .of_post_icons .simpleactionmenu[data-actiontype="flag"] > button, 
+.path-mod-ouilforum .of_post_icons .simpleactionmenu[data-actiontype="flag"] a[data-actiontype="flag"], 
+.path-mod-ouilforum .of_post_icons .simpleactionmenu.post_menu > button, 
+.path-mod-ouilforum .of_post_icons span.icon_status {
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	vertical-align: middle;
+}
+.path-mod-ouilforum .of_post_icons button {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+.path-mod-ouilforum .simpleactionmenu.post_menu > button {
+	-webkit-transition: background-color .4s ease;
+	transition: background-color .4s ease;
+	border-radius: 13px;
+	background: url([[pix:mod_ouilforum|i/menu]]) no-repeat 0 center;
+	width: 45px;
+	height: 28px;
+	display: block;
+	border: 1px solid #ccc;
+}
+.path-mod-ouilforum .simpleactionmenu.post_menu > button:hover, 
+.path-mod-ouilforum .simpleactionmenu.post_menu > button:focus {
+	background: url([[pix:mod_ouilforum|i/menuhover]]) no-repeat 0 center;
+	background-color: #ededed;
+	outline: none !important;
+}
+.path-mod-ouilforum button.ouilforum_lock {
+	background: url([[pix:mod_ouilforum|i/lock0]]) no-repeat 0 0;
+}
+.path-mod-ouilforum button.ouilforum_unlock,
+.path-mod-ouilforum .of_post_icons span.icon_status.ouilforum_unlock {
+	background: url([[pix:mod_ouilforum|i/lock]]) no-repeat 0 0;
+}
+.path-mod-ouilforum button[data-action="recommendpost"] {
+	background: url([[pix:mod_ouilforum|i/bulboff]]) no-repeat 0 0;
+}
+.path-mod-ouilforum button[data-action="unrecommendpost"],
+.path-mod-ouilforum .of_post_icons span.icon_status.ouilforum_recommend {
+	background: url([[pix:mod_ouilforum|i/bulbon]]) no-repeat 0 0;
+}
+.path-mod-ouilforum button[data-action="pin"] {
+	background: url([[pix:mod_ouilforum|i/pin0]]) no-repeat 0 0;
+}
+.path-mod-ouilforum button[data-action="unpin"],
+.path-mod-ouilforum .of_post_icons span.icon_status.unpin_discussion {
+	background: url([[pix:mod_ouilforum|i/pin]]) no-repeat 0 0;
+}
+.path-mod-ouilforum .simpleactionmenu[data-flagstatus="0"] > button {
+	background: url([[pix:mod_ouilforum|i/flag0]]) no-repeat 0 0;
+}
+.path-mod-ouilforum .simpleactionmenu[data-actiontype="flag"] a[data-flagvalue="0"] {
+	background: url([[pix:mod_ouilforum|i/flagnone]]) no-repeat 0 0;
+}
+.path-mod-ouilforum .simpleactionmenu[data-actiontype="flag"] a[data-flagvalue="1"],  
+.path-mod-ouilforum .simpleactionmenu[data-flagstatus="1"] > button {
+	background: url([[pix:mod_ouilforum|i/flag1]]) no-repeat 0 0;
+}
+.path-mod-ouilforum .simpleactionmenu[data-actiontype="flag"] a[data-flagvalue="2"], 
+.path-mod-ouilforum .simpleactionmenu[data-flagstatus="2"] > button {
+	background: url([[pix:mod_ouilforum|i/flag2]]) no-repeat 0 0;
+}
+.path-mod-ouilforum .simpleactionmenu[data-actiontype="flag"] a[data-flagvalue="3"], 
+.path-mod-ouilforum .simpleactionmenu[data-flagstatus="3"] > button {
+	background: url([[pix:mod_ouilforum|i/flag3]]) no-repeat 0 0;
+}
+.path-mod-ouilforum .of_post_icons button,
+.path-mod-ouilforum .of_post_icons span.icon_status {
+	border-radius: 10px;
+}
+.path-mod-ouilforum .of_post_icons button:focus,
+.path-mod-ouilforum .of_post_icons span.icon_status:focus {
+	background-color: #efefef;
+	outline: none !important;
+}
+.path-mod-ouilforum .firstpost .of_post_icons button:focus,
+.path-mod-ouilforum .firstpost .of_post_icons span.icon_status:focus {
+	background-color: #fff;
+}
+.path-mod-ouilforum .of_post_icons button:focus,
+.path-mod-ouilforum .of_post_icons span.icon_status:focus {
+	box-shadow: 0 0 1px 1px #808080 inset;
+}
+.path-mod-ouilforum .of_post_icons .simpleactionmenu.grid li a {
+	border-radius: 0;
+}
+.path-mod-ouilforum .of_post_icons .simpleactionmenu.grid li a:focus {
+	box-shadow: none;
+	background-color: #ededed;
+}
+.path-mod-ouilforum .of_post_icons span.icon_status:focus {
+	outline: none;
+}
+.path-mod-ouilforum #region-main a {
+	color: #018388;
+}
+.path-mod-ouilforum #addquickdiscussion {
+	background-color: #018388;
+	border: 1px solid #9db0bf;
+	color: #fff;
+	padding: 3px 8px 2px;
+	font-weight: bold;
+}
+.path-mod-ouilforum #addquickdiscussion img {
+	transition: transform .1s linear;
+}
+.path-mod-ouilforum #addquickdiscussion.wait_for_dialog {
+	background-color: #4B9EA0;
+}
+.path-mod-ouilforum #addquickdiscussion.wait_for_dialog img {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.dir-rtl.path-mod-ouilforum #addquickdiscussion {
+	padding: 3px 3px 2px 8px;
+}
+.dir-ltr.path-mod-ouilforum #addquickdiscussion {
+	padding: 3px 8px 2px 3px;
+}
+.path-mod-ouilforum .clean_button img {
+	width: 19px;
+	height: 19px;
+}
+.path-mod-ouilforum.dir-rtl .clean_button img {
+	margin: 0 0 0 5px;
+}
+.path-mod-ouilforum.dir-ltr .clean_button img {
+	margin: 0 5px 0 0;
+}
+.path-mod-ouilforum #addquickdiscussion:hover, 
+.path-mod-ouilforum #addquickdiscussion:focus {
+	background-color: #016a6e;
+	border: 1px solid #016a6e;
+}
+.path-mod-ouilforum .discussion_new img {
+	width: 20px;
+}
+.path-mod-ouilforum .of_new_post .post_new {
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: url([[pix:mod_ouilforum|i/sun]]) no-repeat 0 50%;
+}
+.path-mod-ouilforum .of_new_post .post_new:hover {
+	background-image: url([[pix:mod_ouilforum|i/sunhover]]);
+}
+.path-mod-ouilforum .firstpost_new {
+	background-color: #f0b751;
+	color: #000;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 1px 6px 2px;
+	margin: 0 16px;
+	border-radius: 10px;
+	-webkit-user-select: none;
+	user-select: none;
+	cursor: default;
+}
+.path-mod-ouilforum .role_icon {
+	width: 18px;
+	height: 18px;
+}
+.path-mod-ouilforum #indexbutton {
+	font-size: 14px;
+}
+.path-mod-ouilforum #ouilforum_top_panel .link_button img {
+	width: 16px;
+	height: 16px;
+}
+.dir-rtl.path-mod-ouilforum .clean_userdate {
+	margin: 0 0 0 10px;
+}
+.dir-ltr.path-mod-ouilforum .clean_userdate {
+	margin: 10px 0 0 0;
+}
+.path-mod-ouilforum .of_post_author {
+	font-size: 15px;
+	display: inline-block;
+	word-break: break-word;
+}
+.path-mod-ouilforum .of_nocontent {
+	color: #016a6e;
+	font-weight: bold;
+}
+.path-mod-ouilforum .firstpost .of_nocontent {
+	font-size: 17px;
+}
+.path-mod-ouilforum.dir-rtl .discussion_subject .numbers {
+	margin: 0 5px 0 0;
+}
+.path-mod-ouilforum.dir-ltr .discussion_subject .numbers {
+	margin: 0 0 0 5px;
+}
+.path-mod-ouilforum .forummode_container {
+	margin: 0 0 5px 0;
+	min-height: 30px;
+}
+.path-mod-ouilforum.dir-rtl .selector_wrapper_container select {
+	padding-left: 30px;
+}
+.path-mod-ouilforum.dir-ltr .selector_wrapper_container select {
+	padding-right: 30px;
+}
+.path-mod-ouilforum .subscribebutton[data-actiontype="unsubscribe"] span.icon {
+	background-image: url([[pix:mod_ouilforum|i/envelope]]);
+}
+.path-mod-ouilforum .subscribebutton[data-actiontype="unsubscribe"]:hover span.icon, 
+.path-mod-ouilforum .subscribebutton[data-actiontype="unsubscribe"]:focus span.icon {
+	background-image: url([[pix:mod_ouilforum|i/envelopehover]]);
+}
+.path-mod-ouilforum .subscribebutton[data-actiontype="subscribe"] span.icon {
+	background-image: url([[pix:mod_ouilforum|i/envelope0]]);
+}
+.path-mod-ouilforum .subscribebutton[data-actiontype="subscribe"]:hover span.icon, 
+.path-mod-ouilforum .subscribebutton[data-actiontype="subscribe"]:focus span.icon {
+	background-image: url([[pix:mod_ouilforum|i/envelope0hover]]);
+}
+.path-mod-ouilforum .trackbutton[data-actiontype="untrack"] span.icon {
+	background-image: url([[pix:mod_ouilforum|i/sun]]);
+}
+.path-mod-ouilforum .trackbutton[data-actiontype="untrack"]:hover span.icon, 
+.path-mod-ouilforum .trackbutton[data-actiontype="untrack"]:focus span.icon {
+	background-image: url([[pix:mod_ouilforum|i/sunhover]]);
+}
+.path-mod-ouilforum .trackbutton[data-actiontype="track"] span.icon {
+	background-image: url([[pix:mod_ouilforum|i/sun0]]);
+}
+.path-mod-ouilforum .trackbutton[data-actiontype="track"]:hover span.icon, 
+.path-mod-ouilforum .trackbutton[data-actiontype="track"]:focus span.icon {
+	background-image: url([[pix:mod_ouilforum|i/sun0hover]]);
+}
+.path-mod-ouilforum .action_fail {
+	-webkit-animation: fadeFailAction 2s ease-in;
+	-moz-animation: fadeFailAction 2s ease-in;
+	-o-animation: fadeFailAction 2s ease-in;
+	animation: fadeFailAction 2s ease-in;
+}
+@-webkit-keyframes fadeFailAction {
+	0%   { background-color: #faa; }
+	100% { background-color: #f2f3f3; }
+}
+@-moz-keyframes fadeFailAction {
+	0%   { background-color: #faa; }
+	100% { background-color: #f2f3f3; }
+}
+@-o-keyframes fadeFailAction {
+	0%   { background-color: #faa; }
+	100% { background-color: #f2f3f3; }
+}
+@keyframes fadeFailAction {
+	0%   { background-color: #faa; }
+	100% { background-color: #f2f3f3; }
+}
+.path-mod-ouilforum .post_subject {
+	font-weight: bold;
+	font-size: 15px;
+	margin: 0;
+    display: inline;
+    line-height: inherit;
+    color: #016a6e;
+    cursor: pointer;
+}
+.path-mod-ouilforum .post_subject:focus {
+	outline: none !important;
+}
+.path-mod-ouilforum .post_subject:focus::before {
+	content: "\00BB";
+	position: absolute;
+}
+.dir-rtl.path-mod-ouilforum .post_subject::before {
+	margin: 0 -10px 0 0;
+}
+.dir-ltr.path-mod-ouilforum .post_subject::before {
+	margin: 0 0 0 -10px;
+}
+.path-mod-ouilforum .of_post_footer {
+	min-height: 28px;
+}
+.path-mod-ouilforum .selector_wrapper_container {
+	display: inline;
+}
+.path-mod-ouilforum .selector_wrapper {
+	position: relative;
+	display: inline-block;
+	border-radius: 20px;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background: url([[pix:mod_ouilforum|i/dropdown]]) no-repeat;
+	background-size: 16px;
+}
+.path-mod-ouilforum .groupselector .selector_wrapper {
+	margin: 0 10px;
+}
+.path-mod-ouilforum .selector_wrapper.focused {
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px (204, 204, 204, 0.6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(204, 204, 204, 0.6);
+	border-color: #aaa;
+}
+.path-mod-ouilforum.dir-rtl .selector_wrapper {
+	padding: 0 5px 0 0;
+	background-position: 3% 50%;
+}
+.path-mod-ouilforum.dir-ltr .selector_wrapper {
+	padding: 0 0 0 5px;
+	background-position: 97% 50%;
+}
+.path-mod-ouilforum.dir-rtl.ie .selector_wrapper,
+.path-mod-ouilforum.dir-ltr.ie .selector_wrapper {
+	background-position-y: 50%;
+}
+.path-mod-ouilforum .selector_wrapper_container select {
+	margin: 0;
+	padding: 0 3px;
+	border: none;
+	outline: none;
+	box-shadow: none;
+	background: transparent;
+	font-size: 13px;
+	height: 26px;
+	color: #018388;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.path-mod-ouilforum .selector_wrapper select::-ms-expand {
+	display: none;
+}
+.path-mod-ouilforum .discussion_button {
+	border-radius: 25px;
+}
+.path-mod-ouilforum .discussion_button:focus,
+.path-mod-ouilforum .close_dialog:focus {
+	-webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.6);
+	box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.6);
+}
+.path-mod-ouilforum .close_dialog:hover, 
+.path-mod-ouilforum .close_dialog:focus {
+	outline: none;
+}
+.path-mod-ouilforum #forward_dialog {
+	padding: 0;
+}
+.path-mod-ouilforum .forum_title {
+	font-size: 22px;
+	color: #018388;
+	margin: 0;
+}
+.path-mod-ouilforum .forum_index_title {
+	font-size: 22px;
+	font-weight: bold;
+	color: #018388;
+	display: inline-block;
+	margin: 10px 0;
+}
+.path-mod-ouilforum .ouilforum_paging .currentpage {
+	color: #018388;
+	font-weight: bold;
+}
+.path-mod-ouilforum .close_dialog {
+	color: #018388;
+	text-align: center;
+	width: 20px;
+	height: 20px;
+	padding: 0;
+	margin: 5px;
+	border: none;
+	background: none;
+	line-height: 0;
+	font-size: 16px;
+}
+.path-mod-ouilforum #quickdiscussioncontainer,
+.path-mod-ouilforum #quickreplycontainer {
+	padding: 0 30px 12px;
+	margin: 0 -30px;
+	max-height: 350px;
+	-webkit-transition: max-height .4s ease, padding-bottom .4s ease;
+	transition: max-height .4s ease, padding-bottom .4s ease;
+	overflow: hidden;
+}
+.path-mod-ouilforum .simpleactionmenu.post_menu li a {
+	font-size: 15px;
+}
+.path-mod-ouilforum .stage_button_container {
+	display: inline-block;
+	position: relative;
+}
+.path-mod-ouilforum .stage_button_options {
+    position: absolute;
+    text-align: center;
+    padding: 5px 8px;
+    border: 1px solid #dbdfe4;
+    border-radius: 2px;
+    z-index: 100;
+    background-color: #fff;
+}
+.path-mod-ouilforum .stage_button_options span {
+	white-space: nowrap;
+    display: block;
+    margin-bottom: 5px;
+    outline: none;
+    font-size: 14px;
+}
+.path-mod-ouilforum .stage_button_options div {
+	white-space: nowrap;
+}
+.path-mod-ouilforum .stage_button_options button {
+	outline: none;
+	-webkit-transition: box-shadow .4s ease, -webkit-box-shadow .4s ease;
+	transition: box-shadow .4s ease, -webkit-box-shadow .4s ease;
+	border-radius: 15px;
+	border: 1px solid #ccc;
+}
+.path-mod-ouilforum .stage_button_options button:focus {
+	border-color: #888;
+	color: #000;
+}
+.path-mod-ouilforum .stage_button_options button:active {
+	outline: none;
+}
+.path-mod-ouilforum .stage_button_options button:not([aria-pressed]) {
+	-webkit-box-shadow: 3px 3px 5px 1px #cfcfcf, inset 0px -1px 1px 1px #ededed, inset 3px 3px 5px 1px #fafafa;
+	box-shadow: 3px 3px 5px 1px #cfcfcf, inset 0px -1px 1px 1px #ededed, inset 3px 3px 5px 1px #fafafa;
+	background-color: #fafafa;
+}
+.path-mod-ouilforum .stage_button_options button[aria-pressed="true"] {
+	-webkit-box-shadow: inset 3px 3px 1px 1px rgba(207,207,207,1);
+	box-shadow: inset 3px 3px 1px 1px rgba(207,207,207,1);
+	background-color: #ecffed;
+}
+.dir-rtl.path-mod-ouilforum .stage_button_options {
+	left: 0;
+	-webkit-box-shadow: 3px 4px 6px 2px rgba(207,207,207,1);
+    box-shadow: 3px 4px 6px 2px rgba(207,207,207,1);
+}
+.dir-ltr.path-mod-ouilforum .stage_button_options {
+    right: 0;
+	-webkit-box-shadow: -3px 4px 6px 2px rgba(207,207,207,1);
+    box-shadow: -3px 4px 6px 2px rgba(207,207,207,1);
+}
+.path-mod-ouilforum .of_post_header_clickable {
+	position: absolute;
+	width: 26px;
+	height: 100%;
+	-webkit-transition: background-color .1s ease;
+	transition: background-color .1s ease;
+}
+.path-mod-ouilforum .of_post_header_clickable:focus {
+	outline: none;
+}
+.path-mod-ouilforum .postlevel1 .of_post_header_clickable {
+	background-color: #f2f3f3;
+}
+.path-mod-ouilforum .postlevel2 .of_post_header_clickable {
+	background-color: #fff;
+}
+.dir-rtl.path-mod-ouilforum .of_post_header_clickable {
+	border-left: 2px solid #e3e6ea;
+}
+.dir-ltr.path-mod-ouilforum .of_post_header_clickable {
+	border-right: 2px solid #e3e6ea;
+}
+.path-mod-ouilforum ul.forumslist {
+	padding: 0;
+	margin: 0 0 12px;
+}
+.path-mod-ouilforum li.forumslist {
+	list-style-type: none;
+	margin-top: 6px;
+}
+.path-mod-ouilforum .forum_list_header {
+	background-color: #0b8287;
+	color: #fff;
+	font-size: 19px;
+	padding: 1px 8px 2px;
+	border-radius: 2px;
+}
+.path-mod-ouilforum .forum_list_header .discussion_button {
+	width: 20px;
+	height: 20px;
+	margin: 0 0 3px;
+}
+.path-mod-ouilforum .forum_list_header .discussion_button:focus {
+	-webkit-box-shadow: inset 0 0 5px rgba(255, 255, 255, 1);
+	box-shadow: inset 0 0 5px rgba(255, 255, 255, 1);
+}
+
+.dir-rtl.path-mod-ouilforum .forum_list_header .discussion_button {
+	background-image: url([[pix:mod_ouilforum|i/togglearrowwhitertl]]);
+}
+.dir-ltr.path-mod-ouilforum .forum_list_header .discussion_button {
+	background-image: url([[pix:mod_ouilforum|i/togglearrowwhiteltr]]);
+}
+.dir-rtl.path-mod-ouilforum .forum_container {
+	-webkit-box-shadow: 2px 2px 3px 0 #dbdfe4;
+	box-shadow: 2px 2px 3px 0 #dbdfe4;
+}
+.dir-ltr.path-mod-ouilforum .forum_container {
+	-webkit-box-shadow: -2px 2px 3px 0 #dbdfe4;
+	box-shadow: -2px 2px 3px 0 #dbdfe4;
+}
+.path-mod-ouilforum .forum_container {
+	-webkit-transition: background-color .2s ease;
+	transition: background-color .2s ease;
+	border: 1px solid #dbdfe4;
+}
+.path-mod-ouilforum .forum_top {
+	padding: 4px 7px 3px;
+}
+.path-mod-ouilforum .forum_list_title {
+    word-break: break-all;
+    color: #018388;
+	font-size: 19px;
+}
+.path-mod-ouilforum .forum_body {
+    border-bottom: 1px dotted #a8b7c1;
+}
+.dir-rtl.path-mod-ouilforum .forum_body {
+    margin: 0 40px 0 15px;
+}
+.dir-ltr.path-mod-ouilforum .forum_body {
+    margin: 0 15px 0 40px;
+}
+.path-mod-ouilforum .forum_body_content {
+	padding: 15px 0;
+	font-size: 15px;
+}
+.path-mod-ouilforum .forum_footer {
+	font-size: 15px;
+	min-height: 30px;
+}
+.dir-rtl.path-mod-ouilforum .forum_footer {
+	padding: 1px 40px 3px 15px;
+}
+.dir-ltr.path-mod-ouilforum .forum_footer {
+	padding: 1px 15px 3px 40px;
+}
+.path-mod-ouilforum .forum_footer div {
+	display: inline-block;
+	white-space: nowrap;
+}
+.path-mod-ouilforum .forumlist_number {
+	font-size: 14px;
+	min-width: 45px;
+	display: inline-block;
+}
+.path-mod-ouilforum .forum_unread button {
+	margin: 0;
+	padding: 2px 5px;
+}
+.path-mod-ouilforum .clean_icon_button {
+	border-radius: 5px;
+	padding: 3px;
+	margin: 0;
+    -webkit-transition: background-color .4s ease, border .4s ease;
+	transition: background-color .4s ease, border .4s ease;
+	outline: none;
+	font-size: 13px;
+	background-color: #fff;
+	border: 1px solid #fff;
+	background: no-repeat 50% 50%;
+}
+.path-mod-ouilforum .clean_icon_button:focus,
+.path-mod-ouilforum .clean_icon_button:active {
+	outline: none;
+	border-color: #dde1e6;
+}
+.path-mod-ouilforum .clean_icon_button:focus {
+	-webkit-box-shadow: 0 0 1px 1px #808080 inset;
+	box-shadow: 0 0 1px 1px #808080 inset;
+}
+.path-mod-ouilforum .clean_icon_button:active:focus {
+	background-color: #fff;
+}
+.path-mod-ouilforum .clean_icon_button[disabled] {
+	background-color: #dde1e6;
+}
+.path-mod-ouilforum .forumlist_buttons .clean_icon_button span.icon,
+.path-mod-ouilforum #forums_buttons .clean_icon_button span.icon {
+	width: 36px;
+	height: 29px;
+}
+.path-mod-ouilforum .subscribeforumbutton span.icon {
+	margin: 0;
+}
+.path-mod-ouilforum .simpleactionmenu.subscribeallmenu > button {
+	background-image: url([[pix:mod_ouilforum|i/envelopdouble]]);
+}
+.path-mod-ouilforum .simpleactionmenu.subscribeallmenu > button:hover {
+	background-image: url([[pix:mod_ouilforum|i/envelopdoublehover]]);
+}
+.path-mod-ouilforum .subscribeforumbutton[data-actiontype="unsubscribe"] span.icon {
+	background-image: url([[pix:mod_ouilforum|i/envelopebig]]);
+}
+.path-mod-ouilforum .subscribeforumbutton[data-actiontype="unsubscribe"]:hover span.icon, 
+.path-mod-ouilforum .subscribeforumbutton[data-actiontype="unsubscribe"]:focus span.icon {
+	background-image: url([[pix:mod_ouilforum|i/envelopebighover]]);
+}
+.path-mod-ouilforum .simpleactionmenu.subscribeallmenu > button[data-buttonstate="off"],
+.path-mod-ouilforum .subscribeforumbutton[data-actiontype="subscribe"] span.icon {
+	background-image: url([[pix:mod_ouilforum|i/envelopebig0]]);
+}
+.path-mod-ouilforum .simpleactionmenu.subscribeallmenu > button[data-buttonstate="off"]:hover,
+.path-mod-ouilforum .subscribeforumbutton[data-actiontype="subscribe"]:hover span.icon, 
+.path-mod-ouilforum .subscribeforumbutton[data-actiontype="subscribe"]:focus span.icon {
+	background-image: url([[pix:mod_ouilforum|i/envelopebig0hover]]);
+}
+.path-mod-ouilforum .trackforumbutton[data-actiontype="untrack"] span.icon {
+	background-image: url([[pix:mod_ouilforum|i/trackbig]]);
+}
+.path-mod-ouilforum .trackforumbutton[data-actiontype="untrack"]:hover span.icon, 
+.path-mod-ouilforum .trackforumbutton[data-actiontype="untrack"]:focus span.icon {
+	background-image: url([[pix:mod_ouilforum|i/trackbighover]]);
+}
+.path-mod-ouilforum .trackforumbutton[data-actiontype="track"] span.icon {
+	background-image: url([[pix:mod_ouilforum|i/trackbig0]]);
+}
+.path-mod-ouilforum .trackforumbutton[data-actiontype="track"]:hover span.icon, 
+.path-mod-ouilforum .trackforumbutton[data-actiontype="track"]:focus span.icon {
+	background-image: url([[pix:mod_ouilforum|i/trackbig0hover]]);
+}
+.path-mod-ouilforum .index_buttons {
+	display: inline-block;
+}
+.path-mod-ouilforum .index_buttons button {
+	border: 1px solid #ccc;
+}
+.path-mod-ouilforum .forums_buttons_row {
+	display: inline-block;
+	border: 1px solid #ccc;
+    padding: 5px 8px;
+    margin: 3px 5px;
+    border-radius: 15px;
+}
+.dir-rtl.path-mod-ouilforum .index_button_title {
+	margin-left: 10px;
+}
+.dir-ltr.path-mod-ouilforum .index_button_title {
+	margin-right: 10px;
+}
+.dir-rtl.path-mod-ouilforum .forumslist .clean_userdate {
+	margin: 0 0 0 6px;
+}
+.dir-ltr.path-mod-ouilforum .forumslist .clean_userdate {
+	margin: 6px 0 0 0;
+}
+.dir-rtl.path-mod-ouilforum .forumslist .forum_lastupdate {
+	margin: 0 0 0 28px;
+}
+.dir-ltr.path-mod-ouilforum .forumslist .forum_lastupdate {
+	margin: 0 28px 0 0;
+}
+.path-mod-ouilforum .forumslist .forum_clean_date {
+	direction: ltr;
+    unicode-bidi: bidi-override;
+    font-size: 14px;
+}
+.path-mod-ouilforum .post_icon {
+	margin: 0 3px;
+}
+.path-mod-ouilforum .post_icon img {
+	width: 17px;
+	height: 17px;
+}
+.path-mod-ouilforum .forumnodiscuss {
+	font-size: 15px;
+}
+.dir-rtl.path-mod-ouilforum .post_rating_container {
+	margin: 0 0 0 15px;
+	float: left;
+}
+.dir-ltr.path-mod-ouilforum .post_rating_container {
+	margin: 0 15px 0 0;
+	float: left;
+}
+.path-mod-ouilforum .back-to-top {
+	z-index: 1;
+}
+.path-mod-ouilforum .attachments {
+	border-top: 1px solid #e3e6ea;
+	padding: 5px 0 0;
+}
+.path-mod-ouilforum .post_content {
+	overflow-x: auto;
+}
+.path-mod-ouilforum .pgl_main {
+	display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.8);
+    z-index: 2000;
+    text-align: center;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.path-mod-ouilforum .pgl_main:focus {
+	outline: none;
+}
+.path-mod-ouilforum .pgl_body {
+    position: absolute;
+    top: 70px;
+    bottom: 70px;
+    right: 70px;
+    left: 70px;
+}
+.path-mod-ouilforum .pgl_image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.path-mod-ouilforum .pgl_image .pgl_display {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.path-mod-ouilforum .pgl_image span.pgl_display span.nolink {
+	position: relative;
+	top: 50%;
+}
+.path-mod-ouilforum .pgl_image img.pgl_display.formula,
+.path-mod-ouilforum .pgl_image span.pgl_display.formula span.nolink {
+	background-color: #fff;
+	padding: 10px;
+}
+.path-mod-ouilforum .pgl_nav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    background-color: rgba(0,0,0,.3);
+    border: none;
+    font-weight: bold;
+    border-radius: 0;
+    color: #fff;
+    -webkit-transition: background-color .4s ease;
+	transition: background-color .4s ease;
+	outline: none;
+	width: 60px;
+	font-size: 40px;
+	padding: 0;
+}
+.path-mod-ouilforum .pgl_nav:hover,
+.path-mod-ouilforum .pgl_nav:focus {
+    background-color: rgba(0,0,0,1);
+}
+.path-mod-ouilforum .pgl_nav:active {
+	color: #fff;
+	outline: none;
+    background-color: rgba(0,0,0,1);
+}
+.dir-rtl.path-mod-ouilforum .pgl_button_start,
+.dir-ltr.path-mod-ouilforum .pgl_button_end {
+    right: -60px;
+}
+.dir-rtl.path-mod-ouilforum .pgl_button_end,
+.dir-ltr.path-mod-ouilforum .pgl_button_start {
+    left: -60px;
+}
+.path-mod-ouilforum .pgl_close {
+	position: absolute;
+    top: -40px;
+    margin: 0;
+    border-radius: 30px;
+    padding: 0;
+    font-size: 18px;
+    width: 35px;
+    height: 35px;
+    line-height: 0;
+    font-weight: bold;
+    background-color: #fff;
+    color: #000;
+    -webkit-transition: background-color .4s ease, color .4s ease;
+	transition: background-color .4s ease, color .4s ease;
+}
+.path-mod-ouilforum .pgl_close:focus {
+	color: #fff;
+	background-color: #000;
+}
+.path-mod-ouilforum .pgl_close:focus,
+.path-mod-ouilforum .pgl_close:active {
+	outline: none;
+}
+.dir-rtl.path-mod-ouilforum .pgl_close {
+	right: -40px;
+}
+.dir-ltr.path-mod-ouilforum .pgl_close {
+	left: -40px;
+}
+.path-mod-ouilforum .pgl_loader {
+    position: absolute;
+    bottom: -45px;
+    margin: 0;
+    padding: 3px;
+    line-height: 0;
+    width: 30px;
+    height: 30px;
+    color: #888;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-transition: background-color .4s ease, color .4s ease;
+	transition: background-color .4s ease, color .4s ease;
+}
+.path-mod-ouilforum .pgl_loader:hover {
+	background-color: #efefef;
+	color: #333;
+}
+.path-mod-ouilforum .pgl_loader:focus {
+	box-shadow: 0 0 1px 1px #808080 inset;
+	outline: none;
+}
+.dir-rtl.path-mod-ouilforum .pgl_loader {
+	right: -55px
+}
+.dir-ltr.path-mod-ouilforum .pgl_loader {
+	left: -55px
+}
+.path-mod-ouilforum .pgl_image_footer {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    color: #fff;
+    bottom: -40px;
+    text-align: center;
+}
+.path-mod-ouilforum .pgl_counter {
+    direction: ltr;
+    unicode-bidi: bidi-override;
+}
+.path-mod-ouilforum.noscroll {
+	overflow: hidden;
+}
+.path-mod-ouilforum .post_title_heading {
+	margin: 0;
+}
+.path-mod-ouilforum .dialog_field_alert_label {
+	display: block;
+    font-weight: bold;
+    color: #ff6868;
+}
+.path-mod-ouilforum .of_clean_dialog .ui-widget-header {
+	border: none;
+	background: none;
+}
+.path-mod-ouilforum .of_clean_dialog .ui-dialog-buttonset button {
+	border: none;
+	border-radius: 3px;
+	-webkit-transition: background-color .4s ease;
+    transition: background-color .4s ease;
+}
+.path-mod-ouilforum .of_clean_dialog {
+	border-radius: 3px;
+}
+.path-mod-ouilforum .of_clean_dialog button.fa {
+	font-family: FontAwesome !important;
+}
+.dir-rtl.path-mod-ouilforum .of_clean_dialog {
+	-webkit-box-shadow: 3px 4px 6px 2px rgba(207,207,207,1);
+    box-shadow: 3px 4px 6px 2px rgba(207,207,207,1);
+}
+.dir-ltr.path-mod-ouilforum .of_clean_dialog {
+	-webkit-box-shadow: -3px 4px 6px 2px rgba(207,207,207,1);
+    box-shadow: -3px 4px 6px 2px rgba(207,207,207,1);
+}
+.path-mod-ouilforum .post_title_clickable {
+    height: 20px;
+    position: absolute;
+    width: 90%;
+    top: 0;
+    z-index: -1;
+}
+.path-mod-ouilforum .post_title_clickable:focus {
+	outline: none;
+}
+.dir-rtl.path-mod-ouilforum .post_title_clickable {
+	left: 0;
+}
+.dir-ltr.path-mod-ouilforum .post_title_clickable {
+	right: 0;
+}
+.path-mod-ouilforum #region-main a.dimmed {
+	color: #777;
+}
+.path-mod-ouilforum #forums_buttons_index {
+	padding: 0 8px;
+}
+.path-mod-ouilforum .simpleactionmenu.subscribeallmenu > button {
+	display: inline-block;
+	width: 44px;
+	height: 37px;
+	border: none;
+	margin: 0;
+	padding: 3px;
+}
+.path-mod-ouilforum #page .simpleactionmenu.subscribeallmenu > button:focus {
+	outline: none;
+	-webkit-box-shadow: 0 0 1px 1px #808080 inset;
+	box-shadow: 0 0 1px 1px #808080 inset;
+}
+.path-mod-ouilforum .simpleactionmenu.subscribeallmenu .corner_caret {
+	bottom: 0;
+}
+.path-mod-ouilforum .simpleactionmenu.subscribeallmenu li a[role="menuitem"] {
+	padding: 0 20px;
+	margin: 3px 0;
+}
+.path-mod-ouilforum .simpleactionmenu.subscribeallmenu li a span {
+	width: 26px;
+	height: 20px;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+.path-mod-ouilforum .simpleactionmenu.subscribeallmenu li a[data-action="subscribe"] span {
+	background-image: url([[pix:mod_ouilforum|i/envelopebighover]]);
+}
+.path-mod-ouilforum .simpleactionmenu.subscribeallmenu li a[data-action="unsubscribe"] span {
+	background-image: url([[pix:mod_ouilforum|i/envelopebig0hover]]);
+}
+.dir-rtl.path-mod-ouilforum .simpleactionmenu.subscribeallmenu li a span {
+	margin: 0 -20px 0 5px;
+}
+.dir-ltr.path-mod-ouilforum .simpleactionmenu.subscribeallmenu li a span {
+	margin: 0 5px 0 -20px;
+}
+.path-mod-ouilforum .forumslist .unread_marker {
+	background: url([[pix:mod_ouilforum|i/sunhover]]) no-repeat;
+    width: 19px;
+    height: 15px;
+    display: inline-block;
+}
+.dir-rtl.path-mod-ouilforum .forumslist .unread_marker {
+    float: right;
+    margin: 5px -20px 0 0;
+}
+.dir-ltr.path-mod-ouilforum .forumslist .unread_marker {
+    float: left;
+    margin: 5px 0 0 -20px;
+}
+.path-mod-ouilforum a.linkable:focus {
+	outline: none !important;
+	text-decoration: underline;
+}
+.path-mod-ouilforum .ouilforum_post .grouppictures {
+	display: inline-block;
+}
+.dir-rtl.path-mod-ouilforum .grouppictures a {
+	margin: 0 3px 0 0;
+}
+.dir-ltr.path-mod-ouilforum .grouppictures a {
+	margin: 0 0 0 3px;
+}
+.path-mod-ouilforum .grouppictures img.grouppicture {
+	border-radius: 15px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    -webkit-transition: border-color .3s ease;
+	transition: border-color .3s ease;
+    
+}
+.path-mod-ouilforum .grouppictures a:focus {
+	outline: none !important;
+}
+.path-mod-ouilforum .grouppictures a:focus img {
+	border-color: #016a6e;
+}
+.path-mod-ouilforum .of_post_footer_addon {
+	padding: 3px 5px;
+}
+.clean_button.enhanced.pulse:hover .icon,
+.clean_button.enhanced.pulse:focus .icon {
+	-webkit-animation: pulse 2s infinite;
+	-moz-animation: pulse 2s infinite;
+	-o-animation: pulse 2s infinite;
+	animation: pulse 2s infinite;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-o-animation-delay: 1s;
+	animation-delay: 1s;
+}
+.path-mod-ouilforum .set_noconfirmdlg .confirmbtndlg {
+	display: none;
+}
+@-webkit-keyframes pulse {
+  0% { -webkit-box-shadow: 0 0 0 0 rgba(2,84,84,.4); }
+  80% { -webkit-box-shadow: 0 0 0 5px rgba(2,84,84,0); }
+  100% { -webkit-box-shadow: 0 0 0 0 rgba(2,84,84,0); }
+}
+@-moz-keyframes pulse {
+  0% { -moz-box-shadow: 0 0 0 0 rgba(2,84,84,.4); }
+  80% { -moz-box-shadow: 0 0 0 5px rgba(2,84,84,0); }
+  100% { -moz-box-shadow: 0 0 0 0 rgba(2,84,84,0); }
+}
+@-o-keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(2,84,84,.4); }
+  80% { box-shadow: 0 0 0 5px rgba(2,84,84,0); }
+  100% { box-shadow: 0 0 0 0 rgba(2,84,84,0); }
+}
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(2,84,84,.4); }
+  80% { box-shadow: 0 0 0 5px rgba(2,84,84,0); }
+  100% { box-shadow: 0 0 0 0 rgba(2,84,84,0); }
+}
+.path-mod-ouilforum #region-main > .card {
+	overflow-x: visible;
+}
+@media print {
+	#page-mod-ouilforum-print header,
+	.path-mod-ouilforum .not-printable,
+	.path-mod-ouilforum footer,
+	.path-mod-ouilforum #ouilforum_top_panel,
+	.path-mod-ouilforum #ouilforum_top_buttons,
+	.path-mod-ouilforum .forummode_container,
+	.path-mod-ouilforum button.of_reply,
+	.path-mod-ouilforum .post_commands,
+	.path-mod-ouilforum .post_rating_container select,
+	.path-mod-ouilforum .pgl_loader,
+	.path-mod-ouilforum .mod_btn,
+	.path-mod-ouilforum .subscribediscussion,
+	.path-mod-ouilforum #block-region-side-pre,
+	.path-mod-ouilforum #block-region-side-post {
+		display: none;
+	}
+	.path-mod-ouilforum .back-to-top {
+		visibility: hidden;
+	}
+	.path-mod-ouilforum #region-main {
+		width: 100%;
+	}
+	#page-mod-ouilforum-print #page-content-wrapper {
+		min-height: 400px;
+	}
+	.path-mod-ouilforum .of_discussion_header,
+	.path-mod-ouilforum .of_post_header_clickable {
+		background-color: #fff !important;
+	}
+}
+@media (max-width: 767px) {
+	.path-mod-ouilforum #page-header.row,
+	.path-mod-ouilforum #page-content.row {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.path-mod-ouilforum #page.container-fluid {
+		padding: 0;
+	}
+	.path-mod-ouilforum .hidden-xs {
+		display: none !important;
+	}
+	.path-mod-ouilforum .of_post_body_side,
+	.path-mod-ouilforum #advancededitdiscussion,
+	.path-mod-ouilforum #advancededitpost,
+	.path-mod-ouilforum .simpleactionmenu a[data-action="print"],
+	.path-mod-ouilforum .clean_button.stage_button .button_text {
+		display: none;
+	}
+	.path-mod-ouilforum .clean_button.stage_button.enhanced span.icon {
+		margin: -3px 0 0;
+	}
+	.dir-rtl.path-mod-ouilforum .post_content ul,
+	.dir-rtl.path-mod-ouilforum .post_content ol {
+		margin: 0 20px 10px 0;
+	}
+	.dir-ltr.path-mod-ouilforum .post_content ul,
+	.dir-ltr.path-mod-ouilforum .post_content ol {
+		margin: 0 0 10px 20px;
+	}
+	.path-mod-ouilforum .post_content {
+		min-height: 5px;
+	}
+}
+@media (max-width: 640px) {
+	.path-mod-ouilforum header {
+		z-index: 900;
+	}
+	.path-mod-ouilforum #region-main {
+		padding: 15px 0;
+	}
+	.path-mod-ouilforum .card.card-block {
+		padding: 1.25rem 30px;
+	}
+	.path-mod-ouilforum #region-main-box {
+		padding: 0;
+	}
+	.path-mod-ouilforum .post_header .grouppictures {
+		display: none;
+	}
+	.path-mod-ouilforum #quickdiscussioncontainer,
+	.path-mod-ouilforum #quickreplycontainer {
+		position: relative;
+		z-index: 998;
+	}
+	.path-mod-ouilforum #quickdiscussioncontainer::before,
+	.path-mod-ouilforum #quickreplycontainer::before {
+		position: absolute;
+		content: "";
+	    height: 100%;
+	    width: 100%;
+	    background-color: #fff;
+	    z-index: -1;
+	    right: 0;
+	    left: 0;
+	}
+	.path-mod-ouilforum .ui-widget-overlay {
+		z-index: 10001;
+	}
+	.path-mod-ouilforum #ui_close_dialog {
+		z-index: 10002;
+	}
+	.simpleactionmenu ul {
+		z-index: 10001;
+	}
+	.dir-rtl .firstpost .of_post_body {
+		margin: 0 45px 15px 0;
+	}
+	.dir-rtl .firstpost .of_post_footer {
+		margin: 0 45px 0 0;
+	}
+	.dir-ltr .firstpost .of_post_body {
+		margin: 0 0 15px 45px;
+	}
+	.dir-ltr .firstpost .of_post_footer {
+		margin: 0 0 0 45px;
+	}
+	.dir-rtl .of_post_body {
+		margin: 0 0 15px 0;
+	}
+	.dir-rtl .of_post_footer {
+		margin: 0;
+	}
+	.dir-ltr .of_post_body {
+		margin: 0 0 15px 0;
+	}
+	.dir-ltr .of_post_footer {
+		margin: 0;
+	}
+	.dir-rtl.path-mod-ouilforum .ouilforum_post.postlevel1 .of_post_header {
+		padding-right: 40px;
+	}
+	.dir-ltr.path-mod-ouilforum .ouilforum_post.postlevel1 .of_post_header {
+		padding-left: 40px;
+	}
+	.dir-rtl.path-mod-ouilforum .ouilforum_post.postlevel2 .of_post_header {
+		padding-right: 65px;
+	}
+	.dir-ltr.path-mod-ouilforum .ouilforum_post.postlevel2 .of_post_header {
+		padding-left: 65px;
+	}
+	.dir-rtl.path-mod-ouilforum .ouilforum_post.postlevel2 .of_post_main {
+		padding-right: 96px;
+	}
+	.dir-ltr.path-mod-ouilforum .ouilforum_post.postlevel2 .of_post_main {
+		padding-left: 96px;
+	}
+	.dir-rtl.path-mod-ouilforum .pgl_loader {
+		right: -35px
+	}
+	.dir-ltr.path-mod-ouilforum .pgl_loader {
+		left: -35px
+	}
+	.dir-rtl.path-mod-ouilforum .postlevel1 .of_post_header_container .of_post_header,
+	.dir-rtl.path-mod-ouilforum .postlevel2 .of_post_header_container .of_post_header {
+		margin-right: 30px;
+	}
+	.dir-ltr.path-mod-ouilforum .postlevel1 .of_post_header_container .of_post_header,
+	.dir-ltr.path-mod-ouilforum .postlevel1 .of_post_header_container .of_post_header {
+		margin-left: 30px;
+	}
+	.path-mod-ouilforum .firstpost .post_subject,
+	.path-mod-ouilforum .firstpost .numbers {
+		font-size: 16px;
+	}
+	.path-mod-ouilforum .firstpost .of_nocontent {
+		font-size: 16px;
+	}
+}
+@media (max-width: 480px) {
+	.path-mod-ouilforum .of_post_header_clickable {
+		width: 20px;
+	}
+	.dir-rtl.path-mod-ouilforum .postlevel1 .of_post_header_container .of_post_header, 
+	.dir-rtl.path-mod-ouilforum .postlevel2 .of_post_header_container .of_post_header {
+		margin-right: 20px;
+	}
+	.dir-ltr.path-mod-ouilforum .postlevel1 .of_post_header_container .of_post_header, 
+	.dir-ltr.path-mod-ouilforum .postlevel2 .of_post_header_container .of_post_header {
+		margin-left: 20px;
+	}
+	.dir-rtl.path-mod-ouilforum .ouilforum_post.postlevel1 .of_post_header {
+		padding-right: 35px;
+	}
+	.dir-ltr.path-mod-ouilforum .ouilforum_post.postlevel1 .of_post_header {
+		padding-left: 35px;
+	}
+	.dir-rtl.path-mod-ouilforum .ouilforum_post.postlevel1 .of_post_main,
+	.dir-ltr.path-mod-ouilforum .ouilforum_post.postlevel1 .of_post_main {
+		padding: 14px 0 17px 0;
+	}
+	.dir-rtl.path-mod-ouilforum .ouilforum_post.postlevel2 .of_post_main {
+		padding: 14px 20px 17px 0;
+	}
+	.dir-ltr.path-mod-ouilforum .ouilforum_post.postlevel2 .of_post_main {
+		padding: 14px 0 17px 20px;
+	}
+	.dir-rtl.path-mod-ouilforum .of_post_body {
+		margin: 0 45px 10px 0;
+	}
+	.dir-ltr.path-mod-ouilforum .of_post_body {
+		margin: 0 0 10px 45px;
+	}
+	.dir-rtl.path-mod-ouilforum .of_post_footer {
+		margin: 0 45px 15px 0;
+	}
+	.dir-ltr.path-mod-ouilforum .of_post_footer {
+		margin: 0 0 15px 45px;
+	}
+	.dir-rtl.path-mod-ouilforum .postlevel1 .of_post_body {
+		margin: 0 60px 10px 0;
+	}
+	.dir-ltr.path-mod-ouilforum .postlevel1 .of_post_body {
+		margin: 0 0 10px 60px;
+	}
+	.dir-rtl.path-mod-ouilforum .postlevel1 .of_post_footer {
+		margin: 0 60px 15px 0;
+	}
+	.dir-ltr.path-mod-ouilforum .postlevel1 .of_post_footer {
+		margin: 0 0 15px 60px;
+	}
+	.dir-rtl.path-mod-ouilforum .postlevel2 .of_post_body {
+		margin: 0 55px 10px 0;
+	}
+	.dir-ltr.path-mod-ouilforum .postlevel2 .of_post_body {
+		margin: 0 0 10px 55px;
+	}
+	.dir-rtl.path-mod-ouilforum .postlevel2 .of_post_footer {
+		margin: 0 55px 15px 0;
+	}
+	.dir-ltr.path-mod-ouilforum .postlevel2 .of_post_footer {
+		margin: 0 0 15px 55px;
+	}
+	.dir-rtl.path-mod-ouilforum .ouilforum_post.postlevel2 .of_post_header {
+		padding-right: 50px;
+	}
+	.dir-ltr.path-mod-ouilforum .ouilforum_post.postlevel2 .of_post_header {
+		padding-left: 50px;
+	}
+	.dir-rtl.path-mod-ouilforum .pgl_loader {
+		right: -35px
+	}
+	.dir-ltr.path-mod-ouilforum .pgl_loader {
+		left: -35px
+	}
+	.path-mod-ouilforum #region-main {
+	    padding: 15px 0;
+	}
+	.path-mod-ouilforum .card.card-block {
+		padding: 0 5px;
+	}
+	.dir-rtl.path-mod-ouilforum .of_post_icons {
+		margin-left: -16px;
+	}
+	.dir-ltr.path-mod-ouilforum .of_post_icons {
+		margin-right: -16px;
+	}
+	.path-mod-ouilforum #indexbutton {
+		margin-bottom: 5px;
+	}
+	.path-mod-ouilforum .post_content {
+		min-height: 30px;
+	}
+	.path-mod-ouilforum .post_rating_container,
+	.path-mod-ouilforum .of_post_footer .post_commands {
+		position: absolute;
+		bottom: 3px;
+	}
+	.path-mod-ouilforum .post_rating_container {
+		display: inline-block;
+		float: none;
+		min-height: 30px;
+	}
+	.dir-rtl.path-mod-ouilforum .post_rating_container {
+		right: 60px;
+	}
+	.dir-ltr.path-mod-ouilforum .post_rating_container {
+		left: 60px;
+	}
+	.dir-rtl.path-mod-ouilforum .of_post_footer .post_commands {
+		left: 3px;
+	}
+	.dir-ltr.path-mod-ouilforum .of_post_footer .post_commands {
+		right: 3px;
+	}
+	.path-mod-ouilforum .ouilforum_post .sub_discussion {
+		float: none;
+		position: absolute;
+		bottom: 4px;
+	}
+	.dir-rtl.path-mod-ouilforum .ouilforum_post .sub_discussion {
+		left: 53px;
+	}
+	.dir-ltr.path-mod-ouilforum .ouilforum_post .sub_discussion {
+		right: 53px;
+	}
+	.path-mod-ouilforum .of_reply {
+		margin: 0;
+	}
+	.path-mod-ouilforum #quickdiscussioncontainer,
+	.path-mod-ouilforum #quickreplycontainer {
+		margin: 0 -5px;
+    	padding: 0 5px 19px;
+	}
+}
+@media (max-width: 400px) {
+	.path-mod-ouilforum .ouilforumsearch input#search {
+		width: 85%;
+		margin-bottom: 5px;
+	}
+	.path-mod-ouilforum .ouilforumsearch input#searchforums {
+		width: 48%
+	}
+	.path-mod-ouilforum .ouilforumsearch a#searchadvanced {
+		width: 48%;
+		display: inline-block;
+		text-align: center;
+	}
+	.dir-rtl.path-mod-ouilforum #forums_buttons,
+	.dir-ltr.path-mod-ouilforum #forums_buttons {
+		text-align: center;
+	}
+	.path-mod-ouilforum .forums_buttons_row {
+		display: block;
+		width: 95%;
+	}
+	.dir-rtl.path-mod-ouilforum .index_button_title,
+	.dir-ltr.path-mod-ouilforum .index_button_title {
+		display: block;
+		margin: 0;
+	}
+}

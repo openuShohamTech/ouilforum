@@ -1,0 +1,59 @@
+.ouilforum_post.firstpost .of_post_header {
+    -webkit-transition: background-color .2s ease;
+	transition: background-color .2s ease;
+}
+.path-mod-ouilforum .of_post_header_container {
+    -webkit-transition: background-color .1s ease;
+	transition: background-color .1s ease;
+}
+.path-mod-ouilforum .postlevel1 .of_post_header_container:hover,
+.path-mod-ouilforum .postlevel1 .of_post_header_container:hover .of_post_header_clickable {
+	background-color: #ededed;
+}
+.path-mod-ouilforum .postlevel2 .of_post_header_container:hover,
+.path-mod-ouilforum .postlevel2 .of_post_header_container:hover .of_post_header_clickable {
+	background-color: #f2f3f3;
+}
+.path-mod-ouilforum .firstpost .of_post_header:hover {
+	background-color: #ededed;
+}
+.path-mod-ouilforum .delete_state .postlevel1 .of_post_header_container:hover,
+.path-mod-ouilforum .delete_state .postlevel2 .of_post_header_container:hover,
+.path-mod-ouilforum .delete_state .firstpost .of_post_header:hover {
+	background-color: #ffbfbf;
+}
+.path-mod-ouilforum .of_post_icons button,
+.path-mod-ouilforum .of_post_icons span.icon_status {
+    -webkit-transition: background-color .4s ease;
+	transition: background-color .4s ease;
+}
+.path-mod-ouilforum .of_post_icons button:hover, 
+.path-mod-ouilforum .of_post_icons span.icon_status:hover {
+	background-color: #efefef;
+	outline: none !important;
+}
+.path-mod-ouilforum .firstpost .of_post_icons button:hover, 
+.path-mod-ouilforum .firstpost .of_post_icons span.icon_status:hover {
+	background-color: #fff;
+}
+.path-mod-ouilforum .discussion_new img,
+.path-mod-ouilforum .of_new_post .post_new {
+	-webkit-transition: 10s linear;
+	transition: 10s linear;
+	transition-delay: 2s; 
+}
+.path-mod-ouilforum .post_icon img:hover,
+.path-mod-ouilforum .of_new_post .post_new:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+.path-mod-ouilforum li.forumslist {
+	-webkit-transition: background-color .2s ease;
+	transition: background-color .2s ease;
+}
+.path-mod-ouilforum li.forumslist:hover {
+	background-color: #fafafa;
+}
+.path-mod-ouilforum .grouppictures a:hover img {
+	border-color: #016a6e;
+}
