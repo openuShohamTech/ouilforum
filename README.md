@@ -8,7 +8,7 @@ The design is responsive and can support various resolutions for desktop and mob
 
 Note: You **must** have AJAX enabled on you site in order for the forum to work.
 
-The forum is accessible in compliant with *WCAG AA*.
+The forum is accessible in compliance with *WCAG AA*.
 
 The forum is based on the Moodle's forum plugin.
 
