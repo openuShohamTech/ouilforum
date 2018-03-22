@@ -1,4 +1,4 @@
-#OUILForum for Moodle 3.4
+# OUILForum for Moodle 3.4
 
 Developed by The Open University of Israel.
 
