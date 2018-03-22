@@ -16,4 +16,4 @@ The forum is provided under the GNU General Public License
 You should have received a copy of the [GNU General Public License](http://www.gnu.org/licenses/)
 
 
-**Please not that this is a beta version.** 
+**Please note that this is a beta version.** 
