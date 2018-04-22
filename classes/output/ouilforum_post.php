@@ -155,6 +155,7 @@ class ouilforum_post implements \renderable, \templatable {
         return array(
             'id'                            => html_entity_decode($this->post->id),
             'coursename'                    => html_entity_decode($this->get_coursename()),
+            'coursefullname'                => html_entity_decode($this->get_coursefullname()),
             'courselink'                    => html_entity_decode($this->get_courselink()),
             'forumname'                     => html_entity_decode($this->get_forumname()),
             'showdiscussionname'            => html_entity_decode($this->get_showdiscussionname()),
@@ -196,6 +197,7 @@ class ouilforum_post implements \renderable, \templatable {
         return array(
             'id'                            => $this->post->id,
             'coursename'                    => $this->get_coursename(),
+            'coursefullname'                => $this->get_coursefullname(),
             'courselink'                    => $this->get_courselink(),
             'forumname'                     => $this->get_forumname(),
             'showdiscussionname'            => $this->get_showdiscussionname(),
@@ -456,6 +458,17 @@ class ouilforum_post implements \renderable, \templatable {
      */
     public function get_coursename() {
         return format_string($this->course->shortname, true, array(
+            'context' => \context_course::instance($this->course->id),
+        ));
+    }
+
+    /**
+     * The full name of the course that the forum is in.
+     *
+     * @return string
+     */
+    public function get_coursefullname() {
+        return format_string($this->course->fullname, true, array(
             'context' => \context_course::instance($this->course->id),
         ));
     }

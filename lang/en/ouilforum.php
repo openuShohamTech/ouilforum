@@ -627,6 +627,7 @@ $string['postmailinfolink'] = 'This is a copy of a message posted in {$a->course
 To reply click on this link: {$a->replylink}';
 $string['postmailnow'] = '<p>This post will be mailed out immediately to all forum subscribers.</p>';
 $string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';
+$string['postmailsubjectlong'] = 'Message from a forum in course "{$a->coursefullname}" with subject "{$a->subject}"';
 $string['postplaintext'] = 'Posted by {$a->name} on {$a->date}.
 Post subject: {$a->subject}.
 Post content:

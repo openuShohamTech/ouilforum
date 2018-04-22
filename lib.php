@@ -830,6 +830,13 @@ function ouilforum_cron() {
                     $canreply = $userto->canpost[$discussion->id];
                 }
 
+                if ($forum->hideauthor) {
+                	$userfrom = core_user::get_noreply_user();
+                	$userfrom->firstname   = get_string('forumauthorhidden', 'ouilforum');
+                	$userfrom->fullname    = get_string('forumauthorhidden', 'ouilforum');
+                	$post->userid = core_user::NOREPLY_USER;
+                }
+
                 $data = new \mod_ouilforum\output\ouilforum_post_email(
                         $course,
                         $cm,
@@ -848,10 +855,10 @@ function ouilforum_cron() {
                 }
 
                 $a = new stdClass();
-                $a->courseshortname = $data->get_coursename();
+                $a->coursefullname = $data->get_coursefullname();
                 $a->forumname = $cleanforumname;
                 $a->subject = $data->get_subject();
-                $postsubject = html_to_text(get_string('postmailsubject', 'ouilforum', $a), 0);
+                $postsubject = html_to_text(get_string('postmailsubjectlong', 'ouilforum', $a), 0);
 
                 $rootid = ouilforum_get_email_message_id($discussion->firstpost, $userto->id, $hostname);
 
@@ -873,7 +880,7 @@ function ouilforum_cron() {
                 // MS Outlook / Office uses poorly documented and non standard headers, including
                 // Thread-Topic which overrides the Subject and shouldn't contain Re: or Fwd: etc.
                 $a->subject = $discussion->name;
-                $postsubject = html_to_text(get_string('postmailsubject', 'ouilforum', $a), 0);
+                $postsubject = html_to_text(get_string('postmailsubjectlong', 'ouilforum', $a), 0);
                 $userfrom->customheaders[] = "Thread-Topic: $postsubject";
                 $userfrom->customheaders[] = "Thread-Index: " . substr($rootid, 1, 28);
 
@@ -903,6 +910,11 @@ function ouilforum_cron() {
                 // If ouilforum_replytouser is not set then send mail using the noreplyaddress.
                 if (empty($CFG->ouilforum_replytouser)) {
                     $eventdata->userfrom = core_user::get_noreply_user();
+                }
+                if ($forum->hideauthor) {
+                	$eventdata->userfrom->firstname = get_string('forumauthorhidden', 'ouilforum');
+                } else {
+                	$eventdata->userfrom->firstname = fullname($userfrom);
                 }
 
                 $smallmessagestrings = new stdClass();

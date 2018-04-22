@@ -633,6 +633,7 @@ $string['postplaintext'] = 'פורסם על ידי {$a->name} בתאריך {$a->
 תוכן ההודעה:
 {$a->content}';
 $string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';
+$string['postmailsubjectlong'] = 'הודעה מפורום הקורס "{$a->coursefullname}" בנושא "{$a->subject}"';
 $string['postrating1'] = 'לרוב ידיעה נבדלת';
 $string['postrating2'] = 'נבדלת ומחוברת';
 $string['postrating3'] = 'לרוב ידיעה מחוברת';
