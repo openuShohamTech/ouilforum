@@ -269,6 +269,30 @@ class mod_ouilforum_post_form extends moodleform {
         $mform->setType('reply', PARAM_INT);
     }
 
+    function get_data() {
+        $data = parent::get_data();
+        if (!$data) {
+            return false;
+        }
+        // Filter received data.
+        $data->subject = ouilforum_filter_post($data->subject);
+        $data->message['text'] = ouilforum_filter_post($data->message['text']);
+        return $data;
+    }
+
+    function definition_after_data() {
+    	parent::definition_after_data();
+    	$mform = &$this->_form;
+    	
+    	// Filter user input.
+    	$subject = $mform->getElement('subject');
+    	$message = $mform->getElement('message');
+    	$message_values = $message->getValue();
+    	$message_values['text'] = ouilforum_filter_post($message_values['text']);
+    	$subject->setValue(ouilforum_filter_post($subject->getValue()));
+    	$message->setValue($message_values);
+    }
+
     /**
      * Form validation
      *
@@ -277,7 +301,8 @@ class mod_ouilforum_post_form extends moodleform {
      * @return array of errors.
      */
     function validation($data, $files) {
-        $errors = parent::validation($data, $files);
+    	$data['subject'] = ouilforum_filter_post($data['subject']); // Needed here to make sure the subject is valid.
+    	$errors = parent::validation($data, $files);
         if (($data['timeend']!=0) && ($data['timestart']!=0) && $data['timeend'] <= $data['timestart']) {
             $errors['timeend'] = get_string('timestartenderror', 'ouilforum');
         }

@@ -10437,6 +10437,7 @@ function ouilforum_format_quick_message($text) {
 	if (empty(trim($text))) {
 		return '';
 	} else {
+		$text = ouilforum_filter_post($text);
 		// Change into something less likely to be made by the user.
 		$text = str_replace(array("\r\n", "\n\r", "\n", "\r"), '{_br}_', $text);
 		$array = explode('{_br}_', $text);
@@ -10445,6 +10446,39 @@ function ouilforum_format_quick_message($text) {
 		}
 		return '<p>'.implode('</p><p>', $array).'</p>';
 	}
+}
+
+/**
+ * Filter posting data from any unwanted values.
+ * @param string $text Source text
+ * @param bool $replace Replace any filtered value with a default char
+ * @return string
+ */
+function ouilforum_filter_post($text, $replace=false) {
+	if (empty($text)) {
+		return '';
+	}
+	static $has_filter;
+	static $filters_list = array();
+	if ($has_filter === false) { // There are no filters to use.
+		return $text;
+	}
+	global $CFG;
+	$filters = $CFG->ouilforum_filterpost;
+	if (empty($filters)) {
+		$has_filters = false;
+		return $text;
+	} else {
+		// Prepare filters.
+		$has_filters = true;
+		$filters = explode("\n", $filters);
+		foreach ($filters as $fl) {
+			$filters_list[] = '/'.$fl.'/i';
+		}
+	}
+	$replace_string = $replace ? '-' : '';
+	$text = preg_replace($filters_list, $replace_string, $text);
+	return $text;
 }
 
 /**

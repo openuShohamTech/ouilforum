@@ -167,6 +167,28 @@ class mod_ouilforum_post_form_mobile extends moodleform {
         
     }
 
+    function get_data() {
+        $data = parent::get_data();
+        if (!$data) {
+            return false;
+        }
+        // Filter received data.
+        $data->subject = ouilforum_filter_post($data->subject, true);
+        $data->message = ouilforum_filter_post($data->message);
+        return $data;
+    }
+
+    function definition_after_data() {
+    	parent::definition_after_data();
+    	$mform = &$this->_form;
+    	
+    	// Filter user input.
+    	$subject = $mform->getElement('subject');
+    	$message = $mform->getElement('message');
+    	$subject->setValue(ouilforum_filter_post($subject->getValue()));
+    	$message->setValue(ouilforum_filter_post($message->getValue()));
+    }
+
     /**
      * Form validation
      *

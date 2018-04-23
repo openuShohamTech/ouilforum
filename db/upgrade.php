@@ -41,7 +41,6 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 defined('MOODLE_INTERNAL') || die();
-require_once('upgradelib.php');
 
 function xmldb_ouilforum_upgrade($oldversion) {
     global $CFG, $DB, $OUTPUT;

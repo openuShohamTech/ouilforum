@@ -152,5 +152,8 @@ if ($ADMIN->fulltree) {
     
     $settings->add(new admin_setting_configtext_with_maxlength('ouilforum_shortnamedelimiter', get_string('shortnamedelimiter', 'ouilforum'),
     		get_string('configshortnamedelimiter', 'ouilforum'), '', PARAM_RAW_TRIMMED, 1, 1));
-    
+
+    $settings->add(new admin_setting_configtextarea('ouilforum_filterpost', get_string('filterpostconfig', 'ouilforum'),
+    		get_string('filterpostconfig_desc', 'ouilforum'),
+    		null, PARAM_RAW_TRIMMED));
 }

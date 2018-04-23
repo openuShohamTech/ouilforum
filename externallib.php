@@ -1131,7 +1131,7 @@ class mod_ouilforum_external extends external_api {
         $params = self::validate_parameters(self::add_quick_discussion_post_parameters(),
                                             array(
                                                 'postid' => $postid,
-                                                'subject' => htmlspecialchars($subject),
+                                                'subject' => ouilforum_filter_post(htmlspecialchars($subject)),
                                                 'message' => ouilforum_format_quick_message($message),
                                             	'ashtml' => $ashtml,
                                             	'postlevel' => $postlevel,
@@ -1762,7 +1762,7 @@ class mod_ouilforum_external extends external_api {
         $params = self::validate_parameters(self::add_quick_discussion_parameters(),
                                             array(
                                                 'forumid'  => $forumid,
-                                                'subject'  => htmlspecialchars($subject),
+                                                'subject'  => ouilforum_filter_post(htmlspecialchars($subject)),
                                                 'message'  => ouilforum_format_quick_message($message),
                                                 'groupid'  => $groupid,
                                             	'togroups' => $togroups,

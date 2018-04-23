@@ -24,7 +24,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2018020100;       // The current module version (Date: YYYYMMDDXX)
+$plugin->version   = 2018042200;       // The current module version (Date: YYYYMMDDXX)
 $plugin->requires  = 2017102500;       // Requires this Moodle version
 $plugin->component = 'mod_ouilforum';  // Full name of the plugin (used for diagnostics)
 $plugin->maturity = MATURITY_BETA;
