@@ -349,6 +349,7 @@ if ($canreply) {
 }
 echo ouilforum_print_quick_forward_dialog();
 
+$discussion->discussion = $discussion->id;
 echo '<ul class="discussionslist">';
 ouilforum_print_discussion($course, $cm, $forum, $discussion, $post, $displaymode, $canreply, $canrate, $display_type, true, $active_post);
 echo '</ul>';
