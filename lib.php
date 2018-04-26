@@ -1049,6 +1049,11 @@ function ouilforum_cron() {
             }
             $digestposts_rs->close(); /// Finished iteration, let's close the resultset
 
+            // Set hidden user for anonymous forums.
+            $hidden_user = core_user::get_noreply_user();
+            $hidden_user->firstname   = get_string('forumauthorhidden', 'ouilforum');
+            $hidden_user->fullname    = get_string('forumauthorhidden', 'ouilforum');
+            
             // Data collected, start sending out emails to each user
             foreach ($userdiscussions as $userid => $thesediscussions) {
 
@@ -1190,6 +1195,14 @@ function ouilforum_cron() {
                             }
                         }
 
+                        $original_user;
+                        // Hide users if necessary.
+                        if ($forum->hideauthor) {
+                        	$userfrom = clone($hidden_user);
+                        	$original_user = $post->userid;
+                        	$post->userid = core_user::NOREPLY_USER;
+                        }
+
                         // Headers to help prevent auto-responders.
                         $userfrom->customheaders = array(
                                 "Precedence: Bulk",
@@ -1214,6 +1227,10 @@ function ouilforum_cron() {
                                 $userto,
                                 $canreply
                             );
+
+                        if ($forum->hideauthor) {
+                        	$post->userid = $original_user; // Reset to the original user's id.
+                        }
 
                         if (!isset($userto->viewfullnames[$forum->id])) {
                             $data->viewfullnames = has_capability('moodle/site:viewfullnames', $modcontext, $userto->id);
