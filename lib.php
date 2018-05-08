@@ -1228,10 +1228,6 @@ function ouilforum_cron() {
                                 $canreply
                             );
 
-                        if ($forum->hideauthor) {
-                        	$post->userid = $original_user; // Reset to the original user's id.
-                        }
-
                         if (!isset($userto->viewfullnames[$forum->id])) {
                             $data->viewfullnames = has_capability('moodle/site:viewfullnames', $modcontext, $userto->id);
                         } else {
@@ -1251,6 +1247,9 @@ function ouilforum_cron() {
                             if (!$CFG->ouilforum_usermarksread) {
                                 $userto->markposts[$post->id] = $post->id;
                             }
+                        }
+                        if ($forum->hideauthor) {
+                        	$post->userid = $original_user; // Reset to the original user's id.
                         }
                     }
                     $footerlinks = array();
