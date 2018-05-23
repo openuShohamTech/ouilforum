@@ -7388,7 +7388,8 @@ function ouilforum_extend_settings_navigation(settings_navigation $settingsnav, 
             $linktext = get_string('subscribe', 'ouilforum');
         }
         $url = new moodle_url('/mod/ouilforum/subscribe.php', array('id'=>$forumobject->id, 'sesskey'=>sesskey()));
-        $forumnode->add($linktext, $url, navigation_node::TYPE_SETTING);
+        $node = $forumnode->add($linktext, $url, navigation_node::TYPE_SETTING);
+        $node->add_class('block_subscribe');
 
         if (isset($discussionid)) {
             if (\mod_ouilforum\subscriptions::is_subscribed($USER->id, $forumobject, $discussionid, $PAGE->cm)) {

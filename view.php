@@ -119,7 +119,7 @@ $PAGE->requires->strings_for_js(array(
     	'subscribediscussion:yes', 'subscribediscussion:yeslabel', 'copylink:gotolink',
     	'pgl:loadbutton', 'pgl:buttonclose', 'pgl:buttonnext', 'pgl:buttonprev',
     	'linktopostfield', 'forwarderror:empty', 'forwarderror:invalidemail', 'confirmdiscardcontentlock',
-    	'enabled', 'disabled', 'postingfailed'
+    	'enabled', 'disabled', 'postingfailed', 'subscribe', 'unsubscribe'
     )
 	, 'ouilforum');
 

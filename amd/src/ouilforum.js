@@ -65,6 +65,7 @@ define(['jquery', 'jqueryui', 'core/ajax', 'core/str', 'mod_ouilforum/accessibil
 		isIE: false,
 		digestBlockNode: null,
 		digestMenuClass: null,
+		subscribeBlockNode: null,
 		settingType: null,
 		ajaxCall: {
 			targetId: '',
@@ -788,6 +789,14 @@ define(['jquery', 'jqueryui', 'core/ajax', 'core/str', 'mod_ouilforum/accessibil
 	    			if (isHidden) {
 	    				resetDigestTree();
 	    			}
+	    		}
+	    		if (PARAMS.subscribeBlockNode) {
+	    			if (newStatus == 'on') {
+	    				PARAMS.subscribeBlockNode.text.textContent = PARAMS.str.unsubscribe;
+	    			} else {
+	    				PARAMS.subscribeBlockNode.text.textContent = PARAMS.str.subscribe;
+	    			}
+	    			
 	    		}
 	    		acc.informScreenReader(node, PARAMS.str.done, newLabel, 'aria-label');
     		}
@@ -1834,14 +1843,19 @@ define(['jquery', 'jqueryui', 'core/ajax', 'core/str', 'mod_ouilforum/accessibil
     		});
     		icons.remove();
     	}
-    	var digestNode = $('aside.block-region .block_settings .block_digest');
-    	if (digestNode.length) {
+    	var blockMenu = $('aside.block-region .block_settings');
+    	if (blockMenu.length) {
     		PARAMS.settingType = 'block';
     	} else {
-    		digestNode = $('#region-main-settings-menu div.menu .block_digest');
+    		blockMenu = $('#region-main-settings-menu div.menu');
+    		if (blockMenu.length) {
+    			PARAMS.settingType = 'menu';
+    		}
+    	}
+    	var digestNode = blockMenu.find('.block_digest');
+    	if (PARAMS.settingType == 'menu') {
         	if (digestNode.length) {
-        		PARAMS.settingType = 'menu';
-        		$('#region-main-settings-menu div.menu .subscribe_digestmode').each(function() {
+        		blockMenu.find('.subscribe_digestmode').each(function() {
         			if (!PARAMS.digestMenuClass) {
         				var menuClass = $(this)[0].className.match(/\s*(.-.-.)\s*/i);
         		    	if (menuClass !== null) {
@@ -1853,6 +1867,7 @@ define(['jquery', 'jqueryui', 'core/ajax', 'core/str', 'mod_ouilforum/accessibil
         	}
     	}
     	if (PARAMS.settingType) {
+    		// Digest.
     		PARAMS.digestBlockNode = digestNode.parent();
     		if (digestNode.hasClass('hidden_element')) {
     			digestNode.removeClass('hidden_element');
@@ -1861,6 +1876,25 @@ define(['jquery', 'jqueryui', 'core/ajax', 'core/str', 'mod_ouilforum/accessibil
     				PARAMS.digestBlockNode.parent().find('.subscribe_digestmode').addClass('hidden_element');    				
     			}
     		}
+    		// Subscribe.
+    		var subscribeNode;
+    		if (PARAMS.settingType == 'menu') {
+    			subscribeNode = blockMenu.find('.block_subscribe');
+    		} else {
+    			subscribeNode = blockMenu.find('.block_subscribe a');
+    		}
+        	if (subscribeNode.length) {
+        		PARAMS.subscribeBlockNode = {
+        				'node': subscribeNode,
+        				'text': null
+        		}
+        		if (subscribeNode[0].childNodes.length == 1) {
+        			PARAMS.subscribeBlockNode.text = subscribeNode[0].childNodes[0];
+        		} else {
+        			PARAMS.subscribeBlockNode.text = subscribeNode[0].childNodes[1];
+        		}
+        	}
+
     	}
     };
     
@@ -1906,7 +1940,7 @@ define(['jquery', 'jqueryui', 'core/ajax', 'core/str', 'mod_ouilforum/accessibil
     	           'forwardtitle', 'forwardsent', 'subscribediscussion:no', 'subscribediscussion:nolabel',
     	           'subscribediscussion:yes','subscribediscussion:yeslabel', 'opendiscussionthread', 'closediscussionthread',
     	           'copylink:gotolink', 'linktopostfield', 'forwarderror:empty', 'forwarderror:invalidemail',
-    	           'confirmdiscardcontentlock', 'enabled', 'disabled', 'postingfailed'];
+    	           'confirmdiscardcontentlock', 'enabled', 'disabled', 'postingfailed', 'subscribe', 'unsubscribe'];
     	var strings = [];
     	$.each(strList, function(strId, strStr) {
     		strings.push({key: strStr, component: 'ouilforum'});
@@ -1960,6 +1994,8 @@ define(['jquery', 'jqueryui', 'core/ajax', 'core/str', 'mod_ouilforum/accessibil
 			PARAMS.str.enabled = s[45];
 			PARAMS.str.disabled = s[46];
 			PARAMS.str.postingFailed = s[47];
+			PARAMS.str.subscribe = s[48];
+			PARAMS.str.unsubscribe = s[49];
 			initDelDialog();
 			initLinkDialog();
 			initCloseDialog();
